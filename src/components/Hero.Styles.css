@@ -1,7 +1,8 @@
 .hero-container {
     background-image: url("../images/bg.jpg");
-    background-position: center top;
-    background-size: cover;
+    background-position: -410px -400px;
+    background-size: 210%;
+    background-repeat: no-repeat;
 }
 
 .hero-container div.body {

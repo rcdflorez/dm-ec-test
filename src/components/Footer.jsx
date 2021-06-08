@@ -125,14 +125,7 @@ export default function Footer() {
                 </div>
 
                 <div className="logos-container row d-flex justify-content-center d-block d-sm-flex justify-content-sm-around w-8">
-                  <img
-                    src="https://explorecredit.com/wp-content/uploads/2020/08/logo_verisign_black-21daa7740767be9eb8d478a3726fd037.png"
-                    sizes="(max-width: 104px) 100vw, 104px"
-                    alt=""
-                    className="so-widget-image d-none"
-                    width="104"
-                    height="38"
-                  />
+                  <StaticImage src="../images/logo_verisign_black.png" />
                 </div>
 
                 <div className="row w-100 m-auto mobile-border-bottom">
