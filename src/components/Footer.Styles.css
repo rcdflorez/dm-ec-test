@@ -1,0 +1,194 @@
+:root {
+    --separator-line-color: #2fc5ea4d;
+    --dark-links-color: #2EC5EA;
+    --dark-bg: #040D1C;
+}
+
+.topHeader {
+    background-color: var(--dark-bg);
+}
+
+.footer-section {}
+
+.footer {
+    background-image: url('../images/footer-bg.jpg');
+    color: white;
+    background-color: var(--dark-bg);
+    clip-path: polygon(0% 5%, 100% 0px, 100% 100%, 0% calc(100% - 0px));
+    z-index: 99;
+    margin: 0;
+    padding: 0;
+    background-position: center left;
+    background-position-y: center;
+    background-size: auto;
+    background-position-y: -220px;
+    background-repeat: no-repeat;
+}
+
+.footer-shadow {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.85) 57%, rgba(9, 9, 121, 0) 95%) !important;
+}
+
+footer {
+    padding: 15px;
+}
+
+.footer footer * {
+    color: white !important;
+}
+
+.footer footer p {
+    color: white !important;
+    font-size: 1.1rem !important;
+}
+
+.logo-container {
+    border-bottom: solid 1px var(--separator-line-color);
+}
+
+.links-container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.bnt-cotainer {
+    border-bottom: solid 1px var(--separator-line-color);
+}
+
+.bnt-cotainer button {
+    width: 100%;
+    border-color: white;
+}
+
+.legal-links-container {
+    /* border-bottom: solid 1px var(--separator-line-color);*/
+}
+
+.legal-links-container a {
+    color: var(--dark-links-color) !important;
+}
+
+.logos-container img {
+    padding: 10px 10px;
+    height: auto;
+}
+
+.contact-info-container {
+    /*border-bottom: solid var(--separator-line-color) 1px;
+    border-top: solid var(--separator-line-color) 1px;*/
+}
+
+body footer .contact-info-container p {
+    color: var(--dark-links-color) !important;
+    font-size: 1rem !important;
+    margin: 0;
+}
+
+.footer footer small {
+    font-size: .6rem;
+    line-height: 12.5px;
+    text-align: justify;
+    color: var(--dark-links-color) !important;
+}
+
+.copyright-container {
+    border-top: solid var(--separator-line-color) 1px;
+}
+
+.links-container ul li {
+    margin: 5px 0px;
+    padding: 5px 0px;
+}
+
+.bnt-cotainer button:hover {
+    background-color: var(--dark-links-color);
+    color: var(--dark-links-color);
+}
+
+@media (min-width: 576px) {
+    .footer {
+        background-size: cover !important;
+        font-size: 1.2rem;
+        clip-path: polygon(0% 25%, 100% 0px, 100% 100%, 0% calc(100% - 0px));
+    }
+    .footer-container {
+        max-width: 1366px;
+        margin-top: 200px !important;
+    }
+    .links-container {}
+    .links-container {
+        border-top: solid 1.5px var(--separator-line-color);
+        border-bottom: solid 1.5px var(--separator-line-color);
+        vertical-align: text-top;
+    }
+    .bnt-cotainer,
+    .bnt-cotainer div {
+        border: none !important;
+    }
+    .legal-container small,
+    .copyright-container small {
+        font-size: .8rem;
+        line-height: 17px
+    }
+    .legal-container {
+        max-width: 90%;
+        margin: auto;
+    }
+    .legal-links-container,
+    .contact-info-container {
+        width: 100%;
+    }
+    .legal-links-container {
+        height: 76px;
+    }
+    .border-1 {
+        border-left: solid 3.5px var(--separator-line-color);
+        border-right: solid 3.5px var(--separator-line-color);
+    }
+    .border-2 {
+        border-right: solid 3.5px var(--separator-line-color);
+    }
+}
+
+ul.navbar-nav li.map-icon-btn {
+    background-image: url('../images/icon_map_darkblue.png');
+    background-size: 20px auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-right: 7px;
+    margin-left: 7px;
+}
+
+ul.navbar-nav li.chat-icon-btn {
+    background-image: url('../images/icon_comment_darkblue.png');
+    background-size: 20px auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-right: 7px;
+    margin-left: 7px;
+}
+
+ul.navbar-nav li.map-icon-btn a,
+ul.navbar-nav li.chat-icon-btn a {
+    color: transparent !important;
+}
+
+header ul.navbar-nav li a {
+    border: var(--dark-bg) solid 1.5px;
+    border-radius: 3px;
+    padding: 5px 25px !important;
+    font-size: .9rem;
+    font-weight: 501;
+    color: var(--dark-bg) !important;
+}
+
+.mobile-border-top {
+    border-top: solid 1px var(--separator-line-color);
+}
+
+.mobile-border-bottom {
+    border-bottom: solid 1px var(--separator-line-color);
+}
