@@ -11,7 +11,7 @@
 .footer-section {}
 
 .footer {
-    background-image: url('../images/footer-bg.jpg');
+    background-image: url('../images/bg.jpg');
     color: white;
     background-color: var(--dark-bg);
     clip-path: polygon(0% 5%, 100% 0px, 100% 100%, 0% calc(100% - 0px));
@@ -150,6 +150,9 @@ body footer .contact-info-container p {
     }
     .border-2 {
         border-right: solid 3.5px var(--separator-line-color);
+    }
+    .footer {
+        background-image: url('../images/bg-large.png');
     }
 }
 

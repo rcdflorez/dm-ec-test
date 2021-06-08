@@ -1,5 +1,5 @@
 .hero-container {
-    background-image: url("../images/footer-bg.jpg");
+    background-image: url("../images/bg.jpg");
     background-position: center top;
     background-size: cover;
 }
@@ -16,11 +16,15 @@
     background: linear-gradient(174deg, rgb(255 255 255 / 0%) 56%, rgb(255 255 255) 94%);
     color: white;
     height: 85vh;
+    min-height: 700px;
 }
 
 @media (min-width: 576px) {
     .bottom-hero {
         background: linear-gradient(176deg, rgba(255, 255, 255, 0) 80%, rgba(255, 255, 255, 1) 80%);
+    }
+    .hero-container {
+        background-image: url("../images/bg-large.png");
     }
 }
 
@@ -38,4 +42,8 @@
     font-size: 1.3rem;
     font-weight: 601;
     color: #052445;
+}
+
+ul {
+    list-style: none;
 }

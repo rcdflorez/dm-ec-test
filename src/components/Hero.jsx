@@ -6,10 +6,18 @@ export default function Footer() {
   return (
     <>
       <div className="container-fluid hero-container p-0">
-        <div className="d-flex flex-column p-0 bottom-hero pt-5">
+        <div className="text-center pt-2 d-sm-none">
+          <StaticImage
+            src="../images/ex-icon.png"
+            className="mx-auto"
+            width="80"
+          />
+        </div>
+
+        <div className="d-flex flex-column p-0 bottom-hero pt-3">
           <div className="px-2 text-center w-100 pt-5">
             <div className="header">
-              <h3>Hello *|FIRSTNAME|*.</h3>
+              <h2>Hello *|FIRSTNAME|*.</h2>
               <h3>Welcome to Explore Credit!</h3>
             </div>
 
