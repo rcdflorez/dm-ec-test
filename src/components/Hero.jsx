@@ -13,6 +13,13 @@ export default function Footer() {
             width="80"
           />
         </div>
+        <div className="text-center pt-4 d-none d-sm-block">
+          <StaticImage
+            src="../images/explore_credit_white_RGB1.png"
+            className="mx-auto"
+            width="150"
+          />
+        </div>
 
         <div className="d-flex flex-column p-0 bottom-hero pt-3">
           <div className="px-2 text-center w-100 pt-5">
@@ -28,16 +35,16 @@ export default function Footer() {
               <h1 className="mt-3">*|LOANAMOUNT|*</h1>
             </div>
           </div>
-          <div className="my-auto">
-            <div className="col-12 col-sm-12 p-0 text-center">
+          <div className="my-auto pb-sm-1 mt-sm-5 ">
+            <div className="col-12 col-sm-12 p-0 text-center mt-sm-4">
               <a className="btn primary px-5 py-3">Let's get Started</a>
             </div>
           </div>
         </div>
       </div>
-      <div className="container-lg">
+      <div className="container-lg body-container">
         <div className="row bg-white">
-          <div className="col-12 text-center">
+          <div className="col-12 col-sm-9 text-center m-auto">
             <p className="h2 wwa-header pb-3">Who We Are</p>
             <p className="h5 wwa-body">
               Explore Credit is a smart, simple, fast way to borrow money when

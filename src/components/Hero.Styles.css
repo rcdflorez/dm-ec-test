@@ -23,9 +23,14 @@
 @media (min-width: 576px) {
     .bottom-hero {
         background: linear-gradient(176deg, rgba(255, 255, 255, 0) 80%, rgba(255, 255, 255, 1) 80%);
+        height: 95vh;
     }
     .hero-container {
         background-image: url("../images/bg-large.png");
+        clip-path: polygon(0% 0%, 100% 0%, 100% 78%, 0% 740px);
+    }
+    .body-container {
+        padding-top: 7rem;
     }
 }
 

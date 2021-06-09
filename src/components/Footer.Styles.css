@@ -112,7 +112,7 @@ body footer .contact-info-container p {
     .footer {
         background-size: cover !important;
         font-size: 1.2rem;
-        clip-path: polygon(0% 25%, 100% 0px, 100% 100%, 0% calc(100% - 0px));
+        clip-path: polygon(-55% 25%, 100% 6%, 100% 100%, 0% calc(100% - 0px));
     }
     .footer-container {
         max-width: 1366px;
