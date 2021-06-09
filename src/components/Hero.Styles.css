@@ -24,6 +24,7 @@
     .bottom-hero {
         background: linear-gradient(176deg, rgba(255, 255, 255, 0) 80%, rgba(255, 255, 255, 1) 80%);
         height: 95vh;
+        max-height: 100px;
     }
     .hero-container {
         background-image: url("../images/bg-large.png");
