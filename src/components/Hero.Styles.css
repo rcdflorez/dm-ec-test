@@ -37,6 +37,29 @@
     }
 }
 
+@media (max-height: 640px) {
+    div.bottom-hero {
+        padding-top: 0px !important;
+        margin-top: 2rem !important;
+        min-height: auto;
+        background: rgb(9, 9, 121);
+        background: -moz-linear-gradient(170deg, rgba(29, 50, 94, 0) 35%, rgba(255, 255, 255, 1) 90%);
+        background: -webkit-linear-gradient(170deg, rgba(29, 50, 94, 0) 35%, rgba(255, 255, 255, 1) 90%);
+        background: linear-gradient(170deg, rgba(29, 50, 94, 0) 35%, rgba(255, 255, 255, 1) 90%);
+        filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#090979", endColorstr="#ffffff", GradientType=1);
+    }
+    .bottom-hero div.pt-5 {
+        padding-top: 0px !important;
+        margin-top: 0px !important;
+    }
+    .bottom-hero div.body {
+        margin-top: 3rem !important;
+    }
+    div.btn-container {
+        margin-top: 4rem !important;
+    }
+}
+
 .wwa-header {
     margin-top: -60px;
     color: var(--dark-links-color);

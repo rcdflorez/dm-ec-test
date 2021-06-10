@@ -43,7 +43,7 @@ export default function Hero(props) {
               <h1 className="mt-3">${amount},00</h1>
             </div>
           </div>
-          <div className="my-auto pb-sm-1 mt-sm-5 ">
+          <div className="my-auto pb-sm-1 mt-sm-5 btn-container">
             <div className="col-12 col-sm-12 p-0 text-center mt-sm-4">
               <a className="btn primary px-5 py-3">Let's get Started</a>
             </div>
