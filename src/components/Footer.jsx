@@ -13,7 +13,7 @@ export default function Footer() {
                 <div className="col-12 d-flex justify-content-center p-4 logo-container d-block d-sm-none">
                   <StaticImage
                     src="../images/explore_credit_white_RGB1.png"
-                    alt="A dinosaur"
+                    alt="A kitten"
                   />
                 </div>
 
@@ -21,7 +21,7 @@ export default function Footer() {
                   <div className="my-auto col-3 d-none d-sm-block align-middle">
                     <StaticImage
                       src="../images/explore_credit_white_RGB1.png"
-                      alt="A dinosaur"
+                      alt="A kitten"
                     />
                   </div>
 
@@ -125,7 +125,10 @@ export default function Footer() {
                 </div>
 
                 <div className="logos-container row d-flex justify-content-center d-block d-sm-flex justify-content-sm-around w-8">
-                  <StaticImage src="../images/logo_verisign_black.png" />
+                  <StaticImage
+                    src="../images/logo_verisign_black.png"
+                    alt="A kitten"
+                  />
                 </div>
 
                 <div className="row w-100 m-auto mobile-border-bottom">

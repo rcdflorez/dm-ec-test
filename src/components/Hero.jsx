@@ -10,14 +10,16 @@ export default function Footer() {
           <StaticImage
             src="../images/ex-icon.png"
             className="mx-auto"
-            width="80"
+            placeholder="blurred"
+            alt="ec-logo"
           />
         </div>
         <div className="text-center pt-4 d-none d-sm-block">
           <StaticImage
             src="../images/explore_credit_white_RGB1.png"
             className="mx-auto"
-            width="150"
+            placeholder="blurred"
+            alt="ec-logo"
           />
         </div>
 

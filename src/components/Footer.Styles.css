@@ -8,8 +8,6 @@
     background-color: var(--dark-bg);
 }
 
-.footer-section {}
-
 .footer {
     background-image: url('../images/bg.jpg');
     color: white;
@@ -63,10 +61,6 @@ footer {
     border-color: white;
 }
 
-.legal-links-container {
-    /* border-bottom: solid 1px var(--separator-line-color);*/
-}
-
 .legal-links-container a {
     color: var(--dark-links-color) !important;
 }
@@ -74,11 +68,6 @@ footer {
 .logos-container img {
     padding: 10px 10px;
     height: auto;
-}
-
-.contact-info-container {
-    /*border-bottom: solid var(--separator-line-color) 1px;
-    border-top: solid var(--separator-line-color) 1px;*/
 }
 
 body footer .contact-info-container p {
@@ -118,7 +107,6 @@ body footer .contact-info-container p {
         max-width: 1366px;
         margin-top: 200px !important;
     }
-    .links-container {}
     .links-container {
         border-top: solid 1.5px var(--separator-line-color);
         border-bottom: solid 1.5px var(--separator-line-color);
