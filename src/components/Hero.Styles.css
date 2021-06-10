@@ -29,6 +29,8 @@
     .hero-container {
         background-image: url("../images/bg-large.png");
         clip-path: polygon(0% 0%, 100% 0%, 100% 78%, 0% 740px);
+        background-size: cover;
+        background-position: center;
     }
     .body-container {
         padding-top: 7rem;
