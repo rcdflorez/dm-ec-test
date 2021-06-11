@@ -1,5 +1,5 @@
 import React from "react"
-import "./Hero.Styles.css"
+import "./HeroB.Styles.css"
 import { StaticImage } from "gatsby-plugin-image"
 
 export default function Hero(props) {
@@ -11,13 +11,14 @@ export default function Hero(props) {
   if (props.amount > 0) amount = props.amount
   return (
     <>
-      <div className="container-fluid hero-container p-0">
+      <div className="container-fluid hero-container-b p-0">
         <div className="text-center pt-2 d-sm-none">
           <StaticImage
             src="../images/ex-icon.png"
             className="mx-auto"
             placeholder="blurred"
             alt="ec-logo"
+            loading="eager"
           />
         </div>
         <div className="text-center pt-4 d-none d-sm-block">
@@ -26,13 +27,14 @@ export default function Hero(props) {
             className="mx-auto"
             placeholder="blurred"
             alt="ec-logo"
+            loading="eager"
           />
         </div>
 
-        <div className="d-flex flex-column p-0 bottom-hero pt-3">
+        <div className="d-flex flex-column p-0 bottom-hero-b pt-3 mt-0 mt-sm-2">
           <div className="px-2 text-center w-100 pt-5">
             <div className="header">
-              <h2>Hello {custName}</h2>
+              <h2>Hello {custName} 2</h2>
               <h3>Welcome to Explore Credit!</h3>
             </div>
 
@@ -44,7 +46,18 @@ export default function Hero(props) {
             </div>
           </div>
           <div className="my-auto pb-sm-1 mt-sm-5 btn-container">
-            <div className="col-12 col-sm-12 p-0 text-center mt-sm-4">
+            <div className="col-12 text-center">
+              <StaticImage
+                src="../images/astronaut_thumbsup_flag.png"
+                className="mx-auto"
+                placeholder="blurred"
+                alt="ec-logo"
+                width={180}
+                loading="eager"
+                object-fit="scale-down"
+              />
+            </div>
+            <div className="col-12 col-sm-12 p-0 text-center mt-sm-0">
               <a className="btn primary px-5 py-3">Let's get Started</a>
             </div>
           </div>
