@@ -1,14 +1,23 @@
-import React from "react"
+import React, { useEffect } from "react"
 import "./HeroA.Styles.css"
 import { StaticImage } from "gatsby-plugin-image"
 
-export default function Hero(props) {
+export default function HeroA(props) {
   let custName = ""
   let amount = 300
 
   if (props.name == "") custName = "Dear Customer"
   else custName = props.name
   if (props.amount > 0) amount = props.amount
+
+  useEffect(() => {
+    let elements = document.getElementsByClassName("hero-container-b")
+    for (var i = 0; i < elements.length; i++) {
+      elements[i].classList.add("hero-container")
+      elements[i].classList.remove("hero-container-b")
+    }
+  })
+
   return (
     <>
       <div className="container-fluid hero-container p-0">

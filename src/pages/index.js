@@ -11,14 +11,16 @@ export default function Home() {
   const [name] = useQueryParam("name", StringParam)
   const [amount] = useQueryParam("amount", NumberParam)
 
-  const group = Math.random() < 0.5 ? "A" : "B"
+  const group =
+    Math.random() < 0.5 ? (
+      <HeroA name={name} amount={amount} />
+    ) : (
+      <HeroB name={name} amount={amount} />
+    )
 
-  console.log(group)
   return (
     <>
-      {group === "A" && <HeroA name={name} amount={amount} />}
-      {group === "B" && <HeroB name={name} amount={amount} />}
-
+      {group}
       <Footer />
     </>
   )

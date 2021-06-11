@@ -1,14 +1,23 @@
-import React from "react"
+import React, { useEffect } from "react"
 import "./HeroB.Styles.css"
 import { StaticImage } from "gatsby-plugin-image"
 
-export default function Hero(props) {
+export default function HeroB(props) {
   let custName = ""
   let amount = 300
 
   if (props.name == "") custName = "Dear Customer"
   else custName = props.name
   if (props.amount > 0) amount = props.amount
+
+  useEffect(() => {
+    let elements = document.getElementsByClassName("hero-container")
+    for (var i = 0; i < elements.length; i++) {
+      elements[i].classList.add("hero-container-b")
+      elements[i].classList.remove("hero-container")
+    }
+  })
+
   return (
     <>
       <div className="container-fluid hero-container-b p-0">
@@ -34,7 +43,7 @@ export default function Hero(props) {
         <div className="d-flex flex-column p-0 bottom-hero-b pt-3 mt-0 mt-sm-2">
           <div className="px-2 text-center w-100 pt-5">
             <div className="header">
-              <h2>Hello {custName} 2</h2>
+              <h2>Hello {custName}</h2>
               <h3>Welcome to Explore Credit!</h3>
             </div>
 
