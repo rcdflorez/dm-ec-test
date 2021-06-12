@@ -11,6 +11,7 @@ export default function HeroB(props) {
   if (props.amount > 0) amount = props.amount
 
   useEffect(() => {
+    document.body.style.backgroundColor = "#011837"
     let elements = document.getElementsByClassName("hero-container")
     for (var i = 0; i < elements.length; i++) {
       elements[i].classList.add("hero-container-b")
@@ -25,55 +26,54 @@ export default function HeroB(props) {
           <StaticImage
             src="../images/ex-icon.png"
             className="mx-auto"
-            placeholder="blurred"
             alt="ec-logo"
             loading="eager"
+            placeholder="blurred"
           />
         </div>
         <div className="text-center pt-4 d-none d-sm-block">
           <StaticImage
             src="../images/explore_credit_white_RGB1.png"
             className="mx-auto"
-            placeholder="blurred"
             alt="ec-logo"
             loading="eager"
+            placeholder="blurred"
           />
         </div>
 
-        <div className="d-flex flex-column p-0 bottom-hero-b pt-3 mt-0 mt-sm-2">
-          <div className="px-2 text-center w-100 pt-5">
-            <div className="header">
-              <h2>Hello {custName}</h2>
-              <h3>Welcome to Explore Credit!</h3>
-            </div>
-
-            <div className="body">
-              <h3>
-                You have been approved <br /> for a loan in the amount of:
-              </h3>
-              <h1 className="mt-3">${amount},00</h1>
+        <div className="row bottom-hero-b pt-3 m-0 mt-sm-2">
+          <div className="col-12 col-sm-6 my-sm-auto">
+            <div className="row">
+              <div className="col-12 text-center header ">
+                <h2>Hello {custName}</h2>
+                <h3>Welcome to Explore Credit!</h3>
+              </div>
+              <div className="col-12 text-center body">
+                <h3>
+                  You have been approved <br /> for a loan in the amount of:
+                </h3>
+                <h1 className="mt-3">${amount},00</h1>
+              </div>
+              <div className="col-12 text-center btn-container">
+                <a className="btn primary px-5 py-3">Let's get Started</a>
+              </div>
             </div>
           </div>
-          <div className="my-auto pb-sm-1 mt-sm-5 btn-container">
-            <div className="col-12 text-center">
-              <StaticImage
-                src="../images/astronaut_thumbsup_flag.png"
-                className="mx-auto"
-                placeholder="blurred"
-                alt="ec-logo"
-                width={180}
-                loading="eager"
-                object-fit="scale-down"
-              />
-            </div>
-            <div className="col-12 col-sm-12 p-0 text-center mt-sm-0">
-              <a className="btn primary px-5 py-3">Let's get Started</a>
-            </div>
+          <div className="col-12 col-sm-6 text-center mt-sm-auto">
+            <StaticImage
+              src="../images/astronaut_thumbsup_flag.png"
+              className="mx-auto"
+              alt="ec-logo"
+              width={385}
+              loading="eager"
+              object-fit="scale-down"
+              placeholder="blurred"
+            />
           </div>
         </div>
       </div>
-      <div className="container-lg body-container">
-        <div className="row bg-white">
+      <div className="container-lg body-container-b text-white">
+        <div className="row">
           <div className="col-12 col-sm-9 text-center m-auto">
             <p className="h2 wwa-header pb-3">Who We Are</p>
             <p className="h5 wwa-body">

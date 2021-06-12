@@ -1,8 +1,8 @@
 import React, { useEffect } from "react"
-import "./HeroA.Styles.css"
+import "./HeroB.Styles.css"
 import { StaticImage } from "gatsby-plugin-image"
 
-export default function HeroA(props) {
+export default function HeroB(props) {
   let custName = ""
   let amount = 300
 
@@ -11,16 +11,17 @@ export default function HeroA(props) {
   if (props.amount > 0) amount = props.amount
 
   useEffect(() => {
-    let elements = document.getElementsByClassName("hero-container-b")
+    document.body.style.backgroundColor = "#011837"
+    let elements = document.getElementsByClassName("hero-container")
     for (var i = 0; i < elements.length; i++) {
-      elements[i].classList.add("hero-container")
-      elements[i].classList.remove("hero-container-b")
+      elements[i].classList.add("hero-container-b")
+      elements[i].classList.remove("hero-container")
     }
   })
 
   return (
     <>
-      <div className="container-fluid hero-container p-0">
+      <div className="container-fluid hero-container-b p-0">
         <div className="text-center pt-2 d-sm-none">
           <StaticImage
             src="../images/ex-icon.png"
@@ -40,7 +41,7 @@ export default function HeroA(props) {
           />
         </div>
 
-        <div className="d-flex flex-column p-0 bottom-hero pt-3">
+        <div className="d-flex flex-column p-0 bottom-hero-b pt-3 mt-0 mt-sm-2">
           <div className="px-2 text-center w-100 pt-5">
             <div className="header">
               <h2>Hello {custName}</h2>
@@ -55,14 +56,25 @@ export default function HeroA(props) {
             </div>
           </div>
           <div className="my-auto pb-sm-1 mt-sm-5 btn-container">
-            <div className="col-12 col-sm-12 p-0 text-center mt-sm-4">
+            <div className="col-12 col-sm-12 p-0 text-center mt-sm-0">
               <a className="btn primary px-5 py-3">Let's get Started</a>
+            </div>
+            <div className="col-12 text-center mt-5">
+              <StaticImage
+                src="../images/astronaut_thumbsup_flag.png"
+                className="mx-auto"
+                alt="ec-logo"
+                width={230}
+                loading="eager"
+                object-fit="scale-down"
+                placeholder="blurred"
+              />
             </div>
           </div>
         </div>
       </div>
-      <div className="container-lg body-container">
-        <div className="row bg-white">
+      <div className="container-lg body-container-b text-white">
+        <div className="row">
           <div className="col-12 col-sm-9 text-center m-auto">
             <p className="h2 wwa-header pb-3">Who We Are</p>
             <p className="h5 wwa-body">

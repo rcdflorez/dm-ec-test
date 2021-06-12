@@ -139,9 +139,6 @@ body footer .contact-info-container p {
     .border-2 {
         border-right: solid 3.5px var(--separator-line-color);
     }
-    .footer {
-        background-image: url('../images/bg-large.png');
-    }
 }
 
 ul.navbar-nav li.map-icon-btn {

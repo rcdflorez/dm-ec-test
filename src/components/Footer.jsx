@@ -10,7 +10,7 @@ export default function Footer() {
           <div className="container-fluid footer-shadow">
             <footer className="pb-0">
               <div className="footer-container m-auto">
-                <div className="col-12 d-flex justify-content-center p-4 logo-container d-block d-sm-none">
+                <div className="col-12 d-flex justify-content-center p-4 logo-container d-block d-sm-none my-5">
                   <StaticImage
                     src="../images/explore_credit_white_RGB1.png"
                     alt="A kitten"

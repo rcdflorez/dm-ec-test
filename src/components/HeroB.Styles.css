@@ -1,5 +1,9 @@
+:root {
+    --variant-b-fade-color: rgba(1, 24, 55, 1)
+}
+
 .hero-container-b {
-    background-image: url("../images/bg-b -mobile.jpg");
+    background-image: url("../images/bg-b.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-repeat: no-repeat;
@@ -15,7 +19,10 @@
 }
 
 .bottom-hero-b {
-    background: linear-gradient(174deg, rgb(255 255 255 / 0%) 56%, rgb(255 255 255) 94%);
+    background: rgb(9, 9, 121);
+    background: -moz-linear-gradient(170deg, rgba(29, 50, 94, 0) 35%, rgba(1, 24, 55, 1) 90%);
+    background: -webkit-linear-gradient(170deg, rgba(29, 50, 94, 0) 35%, rgba(1, 24, 55, 1) 90%);
+    background: linear-gradient(170deg, rgba(29, 50, 94, 0) 35%, rgba(1, 24, 55, 1) 90%);
     color: white;
     height: 85vh;
     min-height: 700px;
@@ -23,18 +30,27 @@
 
 @media (min-width: 576px) {
     .bottom-hero-b {
-        background: linear-gradient(176deg, rgba(255, 255, 255, 0) 80%, rgba(255, 255, 255, 1) 80%);
+        background: linear-gradient(176deg, rgba(255, 255, 255, 0) 80%, rgba(1, 24, 55, 1) 80%);
         height: 95vh;
         max-height: 100px;
     }
     .hero-container-b {
-        background-image: url("../images/bg-b.jpg");
-        clip-path: polygon(0% 0%, 100% 0%, 100% 78%, 0% 740px);
+        background-image: url("../images/bg-b.png");
+        /*clip-path: polygon(0% 0%, 100% 0%, 100% 78%, 0% 740px);*/
         background-size: cover;
         background-position: center;
     }
     .body-container {
         padding-top: 7rem;
+    }
+    .bottom-hero-b h2 {
+        font-size: 3rem;
+    }
+    .bottom-hero-b h3 {
+        font-size: 2rem;
+    }
+    .bottom-hero-b h1 {
+        font-size: 4.5rem;
     }
 }
 
@@ -43,9 +59,9 @@
         padding-top: 0px !important;
         min-height: auto;
         background: rgb(9, 9, 121);
-        background: -moz-linear-gradient(170deg, rgba(29, 50, 94, 0) 35%, rgba(255, 255, 255, 1) 90%);
-        background: -webkit-linear-gradient(170deg, rgba(29, 50, 94, 0) 35%, rgba(255, 255, 255, 1) 90%);
-        background: linear-gradient(170deg, rgba(29, 50, 94, 0) 35%, rgba(255, 255, 255, 1) 90%);
+        background: -moz-linear-gradient(170deg, rgba(29, 50, 94, 0) 35%, rgba(1, 24, 55, 1) 90%);
+        background: -webkit-linear-gradient(170deg, rgba(29, 50, 94, 0) 35%, rgba(1, 24, 55, 1) 90%);
+        background: linear-gradient(170deg, rgba(29, 50, 94, 0) 35%, rgba(1, 24, 55, 1) 90%);
         filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#090979", endColorstr="#ffffff", GradientType=1);
     }
     .bottom-hero-b div.pt-5 {
@@ -107,4 +123,12 @@ ul {
 .hero-container-b div.body {
     margin-top: 1rem !important;
     padding-top: 0px !important;
+}
+
+.body-container-b {
+    background-color: var(--variant-b-fade-color);
+}
+
+.body-container-b {
+    margin-top: 140px !important;
 }
