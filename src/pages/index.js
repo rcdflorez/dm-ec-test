@@ -22,10 +22,9 @@ export default function Home() {
 
   useEffect(() => {
     // Actualiza el título del documento usando la API del navegador
-
-    console.log(variants.HeroA)
-    VariantList = variants.HeroA
-    console.log(VariantList)
+    //console.log(variants.HeroA)
+    //VariantList = variants.HeroA
+    //console.log(VariantList)
   }, [])
 
   const addVariant = variantName => {
@@ -42,7 +41,7 @@ export default function Home() {
       {}
       {!isSSR && (
         <React.Suspense fallback="Loading site...">
-          <div className="row">{VariantList ? <VariantList /> : "Ups..."}</div>
+          {VariantList ? <VariantList name={name} amount={amount} /> : "Ups..."}
         </React.Suspense>
       )}
       <Footer />

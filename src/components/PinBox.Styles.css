@@ -1,0 +1,17 @@
+.form-group input {
+    height: 100%;
+    font-size: 2.5rem;
+    border: solid #FFD216 3px;
+    background: transparent;
+    color: white;
+}
+
+.form-group input:focus {
+    border: solid #FFD216 3px;
+    background: transparent;
+    color: white;
+}
+
+.form-group h3 {
+    font-size: 2rem;
+}

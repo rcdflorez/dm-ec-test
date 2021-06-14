@@ -1,21 +1,32 @@
-import React, { useEffect } from "react"
+import React, { useEffect, useState } from "react"
 import "./HeroB.Styles.css"
 import { StaticImage } from "gatsby-plugin-image"
+import PinBox from "./PinBox"
 
 export default function HeroB(props) {
-  let custName = ""
-  let amount = 300
+  /*let custName = ""
+  let amount = 300*/
 
-  if (props.name == "") custName = "Dear Customer"
+  const { name, amount } = props
+  const [custStatus, setCustStatus] = useState(null)
+
+  /*
+  if (props.name === "") custName = "Dear Customer"
   else custName = props.name
   if (props.amount > 0) amount = props.amount
-
+*/
   useEffect(() => {
     document.body.style.backgroundColor = "#011837"
     let elements = document.getElementsByClassName("hero-container")
     for (var i = 0; i < elements.length; i++) {
       elements[i].classList.add("hero-container-b")
       elements[i].classList.remove("hero-container")
+    }
+
+    if (!name && !amount) {
+      setCustStatus("guest")
+    } else {
+      setCustStatus("customer")
     }
   })
 
@@ -45,29 +56,37 @@ export default function HeroB(props) {
           <div className="col-12 col-sm-6 my-sm-auto">
             <div className="row">
               <div className="col-12 text-center header ">
-                <h2>Hello {custName}</h2>
+                <h2>Hello {name} </h2>
                 <h3>Welcome to Explore Credit!</h3>
               </div>
-              <div className="col-12 text-center body">
-                <h3>
-                  You have been approved <br /> for a loan in the amount of:
-                </h3>
-                <h1 className="mt-3">${amount},00</h1>
-              </div>
+
+              {custStatus === "customer" ? (
+                <div className="col-12 text-center body">
+                  <h3>
+                    You have been approved <br /> for a loan in the amount of:
+                  </h3>
+                  <h1 className="mt-3">${amount},00</h1>
+                </div>
+              ) : (
+                <div className="col-12 text-center body">
+                  <PinBox />
+                </div>
+              )}
+
               <div className="col-12 text-center btn-container">
                 <a className="btn primary px-5 py-3">Let's get Started</a>
               </div>
             </div>
           </div>
-          <div className="col-12 col-sm-6 text-center mt-sm-auto">
+          <div className="col-12 mt-5 col-sm-6 text-center mt-sm-auto">
             <StaticImage
               src="../images/astronaut_thumbsup_flag.png"
               className="mx-auto"
               alt="ec-logo"
-              width={385}
               loading="eager"
               object-fit="scale-down"
               placeholder="blurred"
+              className="col-8 p-0 m-0 col-sm-7"
             />
           </div>
         </div>
