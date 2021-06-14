@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css"
 //import Cookies from "js-cookie"
 //import HeroA from "../components/HeroA"
 //import HeroB from "../components/HeroB"
+import Loader from "../components/Loader"
 import Footer from "../components/Footer"
 
 import { useQueryParam, NumberParam, StringParam } from "use-query-params"
@@ -40,7 +41,7 @@ export default function Home() {
     <>
       {}
       {!isSSR && (
-        <React.Suspense fallback="Loading site...">
+        <React.Suspense fallback={<Loader />}>
           {VariantList ? <VariantList name={name} amount={amount} /> : "Ups..."}
         </React.Suspense>
       )}

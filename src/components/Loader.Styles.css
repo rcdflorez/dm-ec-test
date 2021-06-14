@@ -1,0 +1,8 @@
+.hero-container-loader {
+    background-color: #213858e0;
+}
+
+.bottom-hero-loader {
+    height: 85vh;
+    min-height: 700px;
+}
