@@ -17,7 +17,7 @@ export default function PinBox(props) {
         Enter your Pin below to activate your offer.
       </h3>
       <form>
-        <div className="form-group row px-1 mx-0">
+        <div className="form-group mb-0 row px-1 mx-0">
           <h3 className="col-4 col-sm-12 col-form-label p-0 m-0 pb-sm-3 align-self-center">
             Pin # :
           </h3>
@@ -29,6 +29,12 @@ export default function PinBox(props) {
               onChange={event => validatePinId(event.target.value)}
               value={pinValue}
             />
+          </div>
+          <div
+            id="errorMsjDiv"
+            className="col-12 error-msj text-center mt-2 mb-1 invisible"
+          >
+            Invalid Pin, please verify and try it again.
           </div>
         </div>
       </form>

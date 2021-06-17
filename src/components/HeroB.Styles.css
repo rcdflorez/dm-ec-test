@@ -116,7 +116,7 @@ ul {
 }
 
 .hero-container-b div.btn-container {
-    margin-top: 1rem !important;
+    /* margin-top: 1rem !important;*/
     padding-top: 0px !important;
 }
 
@@ -131,4 +131,8 @@ ul {
 
 .body-container-b {
     margin-top: 140px !important;
+}
+
+div.no-pin a {
+    color: rgba(1, 24, 55, 1);
 }

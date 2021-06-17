@@ -2,13 +2,19 @@ import React, { useEffect, useState } from "react"
 import "./HeroB.Styles.css"
 import { StaticImage } from "gatsby-plugin-image"
 import PinBox from "./PinBox"
+import { NavItem } from "react-bootstrap"
 
 export default function HeroB(props) {
   /*let custName = ""
   let amount = 300*/
 
-  const { name, amount } = props
+  let { name, amount } = props
   const [custStatus, setCustStatus] = useState(null)
+
+  const [globalPinValue, setGlobalPinValue] = useState("")
+
+  const [name2, setName2] = useState(name)
+  const [amount2, setAmount2] = useState(amount)
 
   /*
   if (props.name === "") custName = "Dear Customer"
@@ -23,12 +29,47 @@ export default function HeroB(props) {
       elements[i].classList.remove("hero-container")
     }
 
-    if (!name && !amount) {
+    if (!name2 && !amount2) {
       setCustStatus("guest")
     } else {
       setCustStatus("customer")
     }
-  })
+  }, [])
+
+  function verifyPin() {
+    if (custStatus === "guest") {
+      try {
+        let pin = document.getElementById("pinID").value
+        if (pin === "" || pin === null) return
+        fetch("https://search-service.explore-test.workers.dev/?pin=" + pin)
+          .then(response => response.json())
+          .then(jsondata => {
+            if (jsondata.FIRST_NAME && jsondata.LINE_AMOUNT) {
+              setName2(jsondata.FIRST_NAME)
+              setAmount2(jsondata.LINE_AMOUNT)
+              setCustStatus("customer")
+              document.getElementById("noPinDiv").classList.add("d-none")
+              setGlobalPinValue(pin)
+              console.log(globalPinValue)
+            } else {
+              document
+                .getElementById("errorMsjDiv")
+                .classList.remove("invisible")
+              document.getElementById("pinID").classList.add("invalid")
+
+              return
+            }
+
+            //const approvedAmount = parseInt(jsondata.FIRST_NAME.replace(/,/g, ""));
+          })
+      } catch {
+        return
+      }
+    } else if (custStatus === "customer") {
+      console.log("redirect with" + globalPinValue)
+    }
+    return
+  }
 
   return (
     <>
@@ -56,7 +97,7 @@ export default function HeroB(props) {
           <div className="col-12 col-sm-6 my-sm-auto">
             <div className="row">
               <div className="col-12 text-center header ">
-                <h2>Hello {name} </h2>
+                <h2>Hello {name2} </h2>
                 <h3>Welcome to Explore Credit!</h3>
               </div>
 
@@ -65,7 +106,7 @@ export default function HeroB(props) {
                   <h3>
                     You have been approved <br /> for a loan in the amount of:
                   </h3>
-                  <h1 className="mt-3">${amount},00</h1>
+                  <h1 className="mt-3">${amount2}.00</h1>
                 </div>
               ) : (
                 <div className="col-12 text-center body">
@@ -74,7 +115,12 @@ export default function HeroB(props) {
               )}
 
               <div className="col-12 text-center btn-container">
-                <a className="btn primary px-5 py-3">Let's get Started</a>
+                <a onClick={verifyPin} className="btn primary px-5 py-3">
+                  Let's get Started
+                </a>
+              </div>
+              <div id="noPinDiv" className="col-12 text-center no-pin py-2">
+                If you dont have a pin, <a href="#">click here,</a> to continue.
               </div>
             </div>
           </div>

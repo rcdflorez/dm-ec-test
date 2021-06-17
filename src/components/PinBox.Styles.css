@@ -15,3 +15,13 @@
 .form-group h3 {
     font-size: 2rem;
 }
+
+.form-group input.invalid {
+    border: solid #f93737 3px;
+}
+
+.form-group .error-msj {
+    color: #f93737;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
