@@ -1,9 +1,11 @@
 .form-group input {
-    height: 100%;
+    max-height: 65px;
     font-size: 2.5rem;
     border: solid #FFD216 3px;
     background: transparent;
     color: white;
+    padding-top: 0px !important;
+    font-weight: 600;
 }
 
 .form-group input:focus {
@@ -24,4 +26,12 @@
     color: #f93737;
     font-size: 1.3rem;
     font-weight: 600;
+}
+
+.hero-container-b div.pin-input-container {
+    min-width: 50%!important
+}
+
+.hero-container-b h3.pin-h3 {
+    min-width: 25%!important
 }

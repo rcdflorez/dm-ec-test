@@ -17,11 +17,11 @@ export default function PinBox(props) {
         Enter your Pin below to activate your offer.
       </h3>
       <form>
-        <div className="form-group mb-0 row px-1 mx-0">
-          <h3 className="col-4 col-sm-12 col-form-label p-0 m-0 pb-sm-3 align-self-center">
+        <div className="form-group row mb-0 row px-1 mx-0 d-flex justify-content-center">
+          <h3 className="col-4 col-sm-1 col-form-label p-0 m-0 pb-sm-3 text-right align-self-center pin-h3">
             Pin # :
           </h3>
-          <div className="col-8 col-sm-6  mx-auto">
+          <div className="col-8 col-sm-3  pin-input-container">
             <input
               type="text"
               className="form-control text-center"

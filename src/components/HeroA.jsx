@@ -7,6 +7,11 @@ export default function HeroA(props) {
   const { name, amount } = props
   const [custStatus, setCustStatus] = useState(null)
 
+  const [globalPinValue, setGlobalPinValue] = useState("")
+
+  const [name2, setName2] = useState(name)
+  const [amount2, setAmount2] = useState(amount)
+
   useEffect(() => {
     document.body.style.backgroundColor = "#ffffff"
     let elements = document.getElementsByClassName("hero-container-b")
@@ -14,12 +19,47 @@ export default function HeroA(props) {
       elements[i].classList.add("hero-container")
       elements[i].classList.remove("hero-container-b")
     }
-    if (!name && !amount) {
+    if (!name2 && !amount2) {
       setCustStatus("guest")
     } else {
       setCustStatus("customer")
     }
   })
+
+  function verifyPin() {
+    if (custStatus === "guest") {
+      try {
+        let pin = document.getElementById("pinID").value
+        if (pin === "" || pin === null) return
+        fetch("https://search-service.explore-test.workers.dev/?pin=" + pin)
+          .then(response => response.json())
+          .then(jsondata => {
+            if (jsondata.FIRST_NAME && jsondata.LINE_AMOUNT) {
+              setName2(jsondata.FIRST_NAME)
+              setAmount2(jsondata.LINE_AMOUNT)
+              setCustStatus("customer")
+              document.getElementById("noPinDiv").classList.add("d-none")
+              setGlobalPinValue(pin)
+              console.log(globalPinValue)
+            } else {
+              document
+                .getElementById("errorMsjDiv")
+                .classList.remove("invisible")
+              document.getElementById("pinID").classList.add("invalid")
+
+              return
+            }
+
+            //const approvedAmount = parseInt(jsondata.FIRST_NAME.replace(/,/g, ""));
+          })
+      } catch {
+        return
+      }
+    } else if (custStatus === "customer") {
+      console.log("redirect with" + globalPinValue)
+    }
+    return
+  }
 
   return (
     <>
@@ -40,31 +80,52 @@ export default function HeroA(props) {
             alt="ec-logo"
             loading="eager"
             placeholder="blurred"
+            height={60}
           />
         </div>
 
         <div className="d-flex flex-column p-0 bottom-hero pt-3">
           <div className="px-2 text-center w-100 pt-5">
             <div className="header">
-              <h2>Hello {name}</h2>
-              <h3>Welcome to Explore Credit!</h3>
+              <h2>Hello {name2}</h2>
+              <h1>Welcome to Explore Credit!</h1>
             </div>
             {custStatus === "customer" ? (
               <div className="body">
-                <h3>
-                  You have been approved <br /> for a loan in the amount of:
-                </h3>
-                <h1 className="mt-3">${amount},00</h1>
+                <h5>You have been approved for a loan in the amount of:</h5>
+                <h1 className="mt-3 h1-amount">${amount2},00</h1>
+
+                <div className="d-none d-sm-block justify-content-center col-4 planets-container">
+                  <div className="col-12 planet1-container">
+                    <div className="planetBlue"></div>
+                  </div>
+                  <div className="col-12 planet2-container">
+                    <div className="planetOrange"></div>
+                  </div>
+                </div>
               </div>
             ) : (
               <div className="body">
                 <PinBox />
+                <div className="d-none d-sm-block justify-content-center col-4 planets-container">
+                  <div className="col-12 planet1-container">
+                    <div className="planetBlue"></div>
+                  </div>
+                  <div className="col-12 planet2-container">
+                    <div className="planetOrange"></div>
+                  </div>
+                </div>
               </div>
             )}
           </div>
           <div className="my-auto pb-sm-1 mt-sm-5 btn-container">
             <div className="col-12 col-sm-12 p-0 text-center mt-sm-2">
-              <a className="btn primary px-5 py-3">Let's get Started</a>
+              <a onClick={verifyPin} className="btn primary px-5 py-3">
+                Let's get Started
+              </a>
+            </div>
+            <div id="noPinDiv" className="col-12 text-center no-pin py-2">
+              If you dont have a pin, <a href="#">click here,</a> to continue.
             </div>
           </div>
         </div>
