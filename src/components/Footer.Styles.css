@@ -9,7 +9,7 @@
 }
 
 .footer {
-    background-image: url('../images/bg.png');
+    background-image: url('../images/bg.webp');
     color: white;
     background-color: var(--dark-bg);
     clip-path: polygon(0% 5%, 100% 0px, 100% 100%, 0% calc(100% - 0px));
