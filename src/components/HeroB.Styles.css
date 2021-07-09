@@ -3,7 +3,7 @@
 }
 
 .hero-container-b {
-    background-image: url("../images/bg-b.png");
+    background-image: url("../images/bg-b.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-repeat: no-repeat;
@@ -35,7 +35,7 @@
         max-height: 100px;
     }
     .hero-container-b {
-        background-image: url("../images/bg-b.png");
+        background-image: url("../images/bg-b.webp");
         /*clip-path: polygon(0% 0%, 100% 0%, 100% 78%, 0% 740px);*/
         background-size: cover;
         background-position: center;
