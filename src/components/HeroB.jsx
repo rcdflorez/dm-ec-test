@@ -70,7 +70,7 @@ export default function HeroB(props) {
       }
     } else if (custStatus === "customer") {
       console.log("redirect with" + globalPinValue)
-      window.location.href = "http://localhost:3000/?pin=" + globalPinValue
+      //window.location.href = "http://localhost:3000/?pin=" + globalPinValue
     }
     return
   }

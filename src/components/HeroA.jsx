@@ -40,7 +40,7 @@ export default function HeroA(props) {
               setName2(jsondata.FIRST_NAME)
               setAmount2(jsondata.LINE_AMOUNT)
 
-              document.getElementById("noPinDiv").classList.add("d-none")
+              // document.getElementById("noPinDiv").classList.add("d-none")
               setGlobalPinValue(finalPin)
               console.log(globalPinValue)
               setCustStatus("customer")
