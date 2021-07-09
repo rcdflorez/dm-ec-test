@@ -18,6 +18,7 @@ const importVariant = variantName =>
 export default function Home() {
   const [name] = useQueryParam("name", StringParam)
   const [amount] = useQueryParam("amount", NumberParam)
+  const [pin] = useQueryParam("pin", NumberParam)
   const [variants, setVariants] = useState({})
   let VariantList = null
 
@@ -45,7 +46,11 @@ export default function Home() {
           style={{ minHeight: "100vh" }}
           fallback={<Loader style={{ minHeight: "100vh" }} />}
         >
-          {VariantList ? <VariantList name={name} amount={amount} /> : "Ups..."}
+          {VariantList ? (
+            <VariantList name={name} amount={amount} pin={pin} />
+          ) : (
+            "Ups..."
+          )}
         </React.Suspense>
       )}
       <Footer />

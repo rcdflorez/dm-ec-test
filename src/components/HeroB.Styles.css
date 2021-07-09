@@ -54,7 +54,7 @@
     }
 }
 
-@media (max-height: 640px) {
+@media (max-height: 640px) and (orientation: portrait) {
     div.bottom-hero-b {
         padding-top: 0px !important;
         min-height: auto;
@@ -135,4 +135,22 @@ ul {
 
 div.no-pin a {
     color: rgba(1, 24, 55, 1);
+}
+
+@media only screen and (max-device-width: 1024px) and (orientation: landscape) {
+    .hero-container-b {
+        min-height: 100vh;
+        background-repeat: no-repeat;
+    }
+    div.hero-container-b .div.bottom-hero-b {
+        min-height: 120vh !important;
+    }
+    div.body-container {
+        padding-top: 0;
+    }
+    div.landscape-fix {
+        flex: 0 0 100% !important;
+        width: 100%;
+        max-width: 100% !important;
+    }
 }

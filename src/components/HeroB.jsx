@@ -8,10 +8,10 @@ export default function HeroB(props) {
   /*let custName = ""
   let amount = 300*/
 
-  let { name, amount } = props
+  let { name, amount, pin } = props
   const [custStatus, setCustStatus] = useState(null)
 
-  const [globalPinValue, setGlobalPinValue] = useState("")
+  const [globalPinValue, setGlobalPinValue] = useState(pin)
 
   const [name2, setName2] = useState(name)
   const [amount2, setAmount2] = useState(amount)
@@ -40,17 +40,20 @@ export default function HeroB(props) {
     if (custStatus === "guest") {
       try {
         let pin = document.getElementById("pinID").value
+        let finalPin = ""
         if (pin === "" || pin === null) return
         fetch("https://search-service.explore-test.workers.dev/?pin=" + pin)
           .then(response => response.json())
           .then(jsondata => {
             if (jsondata.FIRST_NAME && jsondata.LINE_AMOUNT) {
+              finalPin = pin
               setName2(jsondata.FIRST_NAME)
               setAmount2(jsondata.LINE_AMOUNT)
-              setCustStatus("customer")
+
               document.getElementById("noPinDiv").classList.add("d-none")
-              setGlobalPinValue(pin)
+              setGlobalPinValue(finalPin)
               console.log(globalPinValue)
+              setCustStatus("customer")
             } else {
               document
                 .getElementById("errorMsjDiv")
@@ -67,6 +70,7 @@ export default function HeroB(props) {
       }
     } else if (custStatus === "customer") {
       console.log("redirect with" + globalPinValue)
+      window.location.href = "http://localhost:3000/?pin=" + globalPinValue
     }
     return
   }
@@ -94,7 +98,7 @@ export default function HeroB(props) {
         </div>
 
         <div className="row bottom-hero-b pt-3 m-0 mt-sm-2">
-          <div className="col-12 col-sm-6 my-sm-auto">
+          <div className="col-12 col-sm-6 my-sm-auto landscape-fix">
             <div className="row">
               <div className="col-12 text-center header ">
                 <h2>Hello {name2} </h2>
@@ -119,9 +123,14 @@ export default function HeroB(props) {
                   Let's get Started
                 </a>
               </div>
-              <div id="noPinDiv" className="col-12 text-center no-pin py-2">
-                If you dont have a pin, <a href="#">click here,</a> to continue.
-              </div>
+              {custStatus != "customer" ? (
+                <div id="noPinDiv" className="col-12 text-center no-pin py-2">
+                  If you dont have a pin, <a href="#">click here,</a> to
+                  continue.
+                </div>
+              ) : (
+                <></>
+              )}
             </div>
           </div>
           <div className="col-12 mt-5 col-sm-6 text-center mt-sm-auto">
