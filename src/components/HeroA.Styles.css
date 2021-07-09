@@ -85,7 +85,7 @@ ul {
     margin: 0 auto!important;
     position: absolute;
     z-index: 2;
-    right: 10rem;
+    right: 5rem;
 }
 
 .body .planets-container .planet1-container img {
@@ -104,7 +104,7 @@ ul {
 }
 
 .body .planets-container .planet1-container .planetBlue {
-    --d: 330px;
+    --d: 200px;
     width: var(--d);
     height: var(--d);
     display: inline-block;
@@ -116,7 +116,7 @@ ul {
 }
 
 .body .planets-container .planet2-container .planetOrange {
-    --d: 150px;
+    --d: 100px;
     width: var(--d);
     height: var(--d);
     display: inline-block;
