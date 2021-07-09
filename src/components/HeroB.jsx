@@ -50,7 +50,7 @@ export default function HeroB(props) {
               setName2(jsondata.FIRST_NAME)
               setAmount2(jsondata.LINE_AMOUNT)
 
-              document.getElementById("noPinDiv").classList.add("d-none")
+              //document.getElementById("noPinDiv").classList.add("d-none")
               setGlobalPinValue(finalPin)
               console.log(globalPinValue)
               setCustStatus("customer")
@@ -70,7 +70,7 @@ export default function HeroB(props) {
       }
     } else if (custStatus === "customer") {
       console.log("redirect with" + globalPinValue)
-      //window.location.href = "http://localhost:3000/?pin=" + globalPinValue
+      window.location.href = "http://localhost:3000/?pin=" + globalPinValue
     }
     return
   }
