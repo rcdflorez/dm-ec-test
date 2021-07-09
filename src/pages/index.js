@@ -41,7 +41,10 @@ export default function Home() {
     <>
       {}
       {!isSSR && (
-        <React.Suspense fallback={<Loader />}>
+        <React.Suspense
+          style={{ minHeight: "100vh" }}
+          fallback={<Loader style={{ minHeight: "100vh" }} />}
+        >
           {VariantList ? <VariantList name={name} amount={amount} /> : "Ups..."}
         </React.Suspense>
       )}

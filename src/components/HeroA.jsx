@@ -93,7 +93,7 @@ export default function HeroA(props) {
             {custStatus === "customer" ? (
               <div className="body">
                 <h5>You have been approved for a loan in the amount of:</h5>
-                <h1 className="mt-3 h1-amount">${amount2},00</h1>
+                <h1 className="mt-3 h1-amount">${amount2}.00</h1>
 
                 <div className="d-none d-sm-block justify-content-center col-4 planets-container">
                   <div className="col-12 planet1-container">
