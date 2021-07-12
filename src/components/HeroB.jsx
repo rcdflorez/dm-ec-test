@@ -125,8 +125,8 @@ export default function HeroB(props) {
               </div>
               {custStatus != "customer" ? (
                 <div id="noPinDiv" className="col-12 text-center no-pin py-2">
-                  If you dont have a pin, <a href="#">click here,</a> to
-                  continue.
+                  If you dont have a pin,{" "}
+                  <a href="http://localhost:3000/">click here,</a> to continue.
                 </div>
               ) : (
                 <></>

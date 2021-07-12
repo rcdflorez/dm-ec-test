@@ -14,12 +14,12 @@ export default function PinBox(props) {
   return (
     <>
       <h3 className="pb-2 font-weight-light">
-        Enter your Pin below to activate your offer.
+        Enter your PIN below to activate your offer.
       </h3>
       <form>
         <div className="form-group row mb-0 row px-1 mx-0 d-flex justify-content-center">
           <h3 className="col-4 col-sm-1 col-form-label p-0 m-0 pb-sm-3 text-right align-self-center pin-h3">
-            Pin # :
+            PIN #:
           </h3>
           <div className="col-8 col-sm-3  pin-input-container">
             <input
@@ -34,7 +34,7 @@ export default function PinBox(props) {
             id="errorMsjDiv"
             className="col-12 error-msj text-center mt-2 mb-1 invisible"
           >
-            Invalid Pin, please verify and try it again.
+            Invalid PIN, please verify and try it again.
           </div>
         </div>
       </form>
