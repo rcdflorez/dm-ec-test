@@ -60,7 +60,7 @@ export default function PinBox(props) {
         <Modal.Body>
           {" "}
           <StaticImage
-            src="../images/astronaut_thumbsup_flag.png"
+            src="../images/find_your_pin.webp"
             className="mx-auto"
             alt="ec-logo"
             loading="eager"

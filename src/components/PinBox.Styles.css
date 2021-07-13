@@ -45,4 +45,5 @@
 
 .pin-location span {
     color: #FFD216;
+    cursor: pointer;
 }
