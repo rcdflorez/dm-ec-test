@@ -31,7 +31,12 @@ export default function HeroA(props) {
       try {
         let pin = document.getElementById("pinID").value
         let finalPin = ""
-        if (pin === "" || pin === null) return
+        if (pin === "" || pin === null) {
+          document.getElementById("errorMsjDiv").classList.remove("invisible")
+          document.getElementById("pinID").classList.add("invalid")
+
+          return
+        }
         fetch("https://search-service.explore-test.workers.dev/?pin=" + pin)
           .then(response => response.json())
           .then(jsondata => {

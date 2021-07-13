@@ -41,7 +41,12 @@ export default function HeroB(props) {
       try {
         let pin = document.getElementById("pinID").value
         let finalPin = ""
-        if (pin === "" || pin === null) return
+        if (pin === "" || pin === null) {
+          document.getElementById("errorMsjDiv").classList.remove("invisible")
+          document.getElementById("pinID").classList.add("invalid")
+
+          return
+        }
         fetch("https://search-service.explore-test.workers.dev/?pin=" + pin)
           .then(response => response.json())
           .then(jsondata => {
@@ -98,7 +103,7 @@ export default function HeroB(props) {
         </div>
 
         <div className="row bottom-hero-b pt-3 m-0 mt-sm-2">
-          <div className="col-12 col-sm-6 my-sm-auto landscape-fix">
+          <div className="col-12 col-sm-6 mb-sm-auto landscape-fix">
             <div className="row">
               <div className="col-12 text-center header ">
                 <h2>Hello {name2} </h2>
@@ -141,7 +146,7 @@ export default function HeroB(props) {
               loading="eager"
               object-fit="scale-down"
               placeholder="blurred"
-              className="col-8 p-0 m-0 col-sm-7"
+              className="col-8 p-0 m-0 col-sm-8"
             />
           </div>
         </div>
@@ -157,11 +162,16 @@ export default function HeroB(props) {
               Through our super easy online loan process, Explore Credit offers
               you the funds you need now.
             </p>
-            <ul className="p-0 mx-auto mt-3 ">
-              <li>Unmatched Customer Service</li>
-              <li>Simple Interest Rates </li>
-              <li>No Hidden Fees</li>
-            </ul>
+
+            <div className="row d-flex justify-content-center">
+              <div className="">
+                <ul className="p-0 mx-auto mt-3 list-b text-left">
+                  <li>Unmatched Customer Service</li>
+                  <li>Simple Interest Rates </li>
+                  <li>No Hidden Fees</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>

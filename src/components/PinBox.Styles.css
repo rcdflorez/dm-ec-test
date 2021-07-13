@@ -1,5 +1,6 @@
 .form-group input {
     max-height: 65px;
+    max-width: 350px;
     font-size: 2.5rem;
     border: solid #FFD216 3px;
     background: transparent;
@@ -34,4 +35,14 @@
 
 .hero-container-b h3.pin-h3 {
     min-width: 18%!important
+}
+
+@media (max-width: 800px) {
+    .form-group input {
+        max-width: 200px;
+    }
+}
+
+.pin-location span {
+    color: #FFD216;
 }

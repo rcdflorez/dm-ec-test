@@ -154,3 +154,23 @@ div.no-pin a {
         max-width: 100% !important;
     }
 }
+
+.hero-container-b div.no-pin a {
+    color: #FFD216;
+}
+
+ul.list-b li {
+    font-size: 1.25rem;
+}
+
+@media only screen and (max-device-width: 800px) and (orientation: portrait) {
+    .body-container-b {
+        margin-top: 500px !important;
+    }
+}
+
+@media only screen and (max-device-height: 900px) and (orientation: portrait) {
+    .body-container-b {
+        margin-top: 300px !important;
+    }
+}

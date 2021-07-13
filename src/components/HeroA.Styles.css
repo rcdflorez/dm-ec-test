@@ -164,3 +164,38 @@ h1.h1-amount {
         padding-top: 0;
     }
 }
+
+@media only screen and (max-device-width: 800px) and (orientation: portrait) {
+    .hero-container div.body-container {
+        padding-top: 130px;
+    }
+    .hero-container div.no-pin {
+        color: #212529;
+        ;
+    }
+    .hero-container div.no-pin a {
+        color: var(--dark-links-color);
+        ;
+    }
+}
+
+@media only screen and (min-device-width: 800px) and (orientation: landscape) {
+    div.hero-container div.bottom-hero {
+        min-height: 100vh !important;
+    }
+}
+
+@media only screen and (max-device-width: 800px) and (orientation: landscape) {
+    div.hero-container div.bottom-hero {
+        min-height: 250vh !important;
+    }
+    div.body-container {
+        padding-top: 0px;
+    }
+}
+
+@media only screen and (max-device-width: 800px) and (orientation: portrait) {
+    div.body-container {
+        padding-top: 150px;
+    }
+}
