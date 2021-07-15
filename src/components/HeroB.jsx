@@ -16,6 +16,19 @@ export default function HeroB(props) {
   const [name2, setName2] = useState(name)
   const [amount2, setAmount2] = useState(amount)
 
+  const baseRedirectURI = "https://application.explorecredit.com/"
+
+  const UTM_BASE =
+    "utm_medium=directmail&utm_source=lsdm&utm_campaign=prescreen072021&utm_content=pageb"
+
+  let UTM_PIN = ""
+
+  if (pin) {
+    UTM_PIN = "&utm_term=qr"
+  } else {
+    UTM_PIN = "&utm_term=noqr"
+  }
+
   /*
   if (props.name === "") custName = "Dear Customer"
   else custName = props.name
@@ -75,7 +88,8 @@ export default function HeroB(props) {
       }
     } else if (custStatus === "customer") {
       console.log("redirect with" + globalPinValue)
-      window.location.href = "http://localhost:3000/?pin=" + globalPinValue
+      window.location.href =
+        baseRedirectURI + "?pin=" + globalPinValue + "&" + UTM_BASE + UTM_PIN
     }
     return
   }
@@ -131,7 +145,10 @@ export default function HeroB(props) {
               {custStatus != "customer" ? (
                 <div id="noPinDiv" className="col-12 text-center no-pin py-2">
                   If you dont have a pin,{" "}
-                  <a href="http://localhost:3000/">click here,</a> to continue.
+                  <a href={baseRedirectURI + UTM_BASE + "&utm_term=noqr"}>
+                    click here,
+                  </a>{" "}
+                  to continue.
                 </div>
               ) : (
                 <></>
