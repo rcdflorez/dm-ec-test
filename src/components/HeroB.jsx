@@ -145,7 +145,7 @@ export default function HeroB(props) {
               {custStatus != "customer" ? (
                 <div id="noPinDiv" className="col-12 text-center no-pin py-2">
                   If you dont have a pin,{" "}
-                  <a href={baseRedirectURI + UTM_BASE + "&utm_term=noqr"}>
+                  <a href={baseRedirectURI + "?" + UTM_BASE + "&utm_term=noqr"}>
                     click here,
                   </a>{" "}
                   to continue.
