@@ -185,22 +185,28 @@ export default function HeroB(props) {
                 <ul className="p-0 mx-auto mt-3 list-b text-left">
                   <li>
                     <StaticImage
-                      src="../images/bullet_star.png"
+                      src="../images/ec_white_star_bullet.webp"
                       loading="eager"
+                      width={20}
+                      height={20}
                     />
                     <span className=" "> Unmatched Customer Service</span>
                   </li>
                   <li>
                     <StaticImage
-                      src="../images/bullet_star.png"
+                      src="../images/ec_white_star_bullet.webp"
                       loading="eager"
+                      width={20}
+                      height={20}
                     />
                     <span> Simple Interest Rates </span>
                   </li>
                   <li>
                     <StaticImage
-                      src="../images/bullet_star.png"
+                      src="../images/ec_white_star_bullet.webp"
                       loading="eager"
+                      width={20}
+                      height={20}
                     />
 
                     <span> No Hidden Fees</span>

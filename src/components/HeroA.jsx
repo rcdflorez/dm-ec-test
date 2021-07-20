@@ -130,14 +130,6 @@ export default function HeroA(props) {
             ) : (
               <div className="body">
                 <PinBox />
-                <div className="d-none d-sm-block justify-content-center col-4 planets-container">
-                  <div className="col-12 planet1-container">
-                    <div className="planetBlue"></div>
-                  </div>
-                  <div className="col-12 planet2-container">
-                    <div className="planetOrange"></div>
-                  </div>
-                </div>
               </div>
             )}
           </div>
@@ -164,7 +156,7 @@ export default function HeroA(props) {
       </div>
       <div className="container-lg body-container">
         <div className="row bg-white">
-          <div className="col-12 col-sm-9 text-center m-auto">
+          <div className="col-12 col-sm-6 text-left m-auto">
             <p className="h2 wwa-header pb-3">Who We Are</p>
             <p className="h5 wwa-body">
               Explore Credit builds relationships through financial trust. We’re
@@ -173,13 +165,43 @@ export default function HeroA(props) {
               Through our super easy online loan process, Explore Credit offers
               you the funds you need now.
             </p>
-            <div className="row d-flex justify-content-center">
-              <div className="">
-                <ul className="p-0 mx-auto mt-3 list-b text-left">
-                  <li> Unmatched Customer Service</li>
-                  <li>Simple Interest Rates </li>
-                  <li>No Hidden Fees</li>
-                </ul>
+            <ul className="p-0 mx-auto mt-3 list-b text-left">
+              <li>
+                <StaticImage
+                  src="../images/ec_blue_star.webp"
+                  loading="eager"
+                  width={20}
+                  height={20}
+                />
+                <span>Unmatched Customer Service</span>
+              </li>
+              <li>
+                <StaticImage
+                  src="../images/ec_blue_star.webp"
+                  loading="eager"
+                  width={20}
+                  height={20}
+                />
+                <span>Simple Interest Rates</span>
+              </li>
+              <li>
+                <StaticImage
+                  src="../images/ec_blue_star.webp"
+                  loading="eager"
+                  width={20}
+                  height={20}
+                />
+                <span>No Hidden Fees</span>
+              </li>
+            </ul>
+          </div>
+          <div className="col-12 col-sm-3 text-center mx-auto">
+            <div className="d-none d-sm-block justify-content-center col-4 planets-container">
+              <div className="col-12 planet1-container">
+                <div className="planetBlue"></div>
+              </div>
+              <div className="col-12 planet2-container">
+                <div className="planetOrange"></div>
               </div>
             </div>
           </div>

@@ -83,34 +83,35 @@
 }
 
 ul {
-    list-style: none;
+    list-style-position: inside;
 }
 
-.body .planets-container {
+div.planets-container {
     width: 100%;
     margin: 0 auto!important;
     position: absolute;
     z-index: 2;
-    right: 5rem;
+    right: 10rem;
+    top: -15rem;
 }
 
-.body .planets-container .planet1-container img {
+div.planets-container .planet1-container img {
     margin-left: -200px;
     margin-top: 20px;
 }
 
-.body .planets-container .planet2-container img {
+div.planets-container .planet2-container img {
     width: 130px;
     margin-left: 50px;
     margin-top: -140px;
 }
 
-.body .planets-container .planet2-container {
+div.planets-container .planet2-container {
     right: -90px;
 }
 
-.body .planets-container .planet1-container .planetBlue {
-    --d: 200px;
+div.planets-container .planet1-container .planetBlue {
+    --d: 300px;
     width: var(--d);
     height: var(--d);
     display: inline-block;
@@ -121,8 +122,8 @@ ul {
     animation: spin 7s linear infinite;
 }
 
-.body .planets-container .planet2-container .planetOrange {
-    --d: 100px;
+div.planets-container .planet2-container .planetOrange {
+    --d: 150px;
     width: var(--d);
     height: var(--d);
     display: inline-block;
@@ -200,13 +201,6 @@ h1.h1-amount {
     }
 }
 
-
-/*
-ul {
-    list-style-image: url('../images/bullet_star.png');
-    list-style-position: inherit;
+.body-container-b ul {
+    list-style: none;
 }
-
-ul li::marker {
-    background-color: red;
-} */

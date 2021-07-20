@@ -34,7 +34,7 @@ export default function Home() {
         var r = ($_REVECHAT_API = function (c) {
           r._.push(c)
         })
-        w.__revechat_account = "3884505"
+        w.__revechat_account = "6495421"
         w.__revechat_version = 2
         r._ = []
         var rc = d.createElement("script")
