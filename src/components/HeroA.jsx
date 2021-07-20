@@ -133,7 +133,7 @@ export default function HeroA(props) {
               </div>
             )}
           </div>
-          <div className="my-auto pb-sm-1 mt-sm-5 btn-container">
+          <div className="my-auto pb-sm-1 mt-sm-0 btn-container">
             <div className="col-12 col-sm-12 p-0 text-center mt-sm-2">
               <a onClick={verifyPin} className="btn primary px-5 py-3">
                 Let's Get Started
