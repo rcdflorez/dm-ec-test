@@ -43,8 +43,7 @@ export default function PinBox(props) {
             </div>
           </div>
           <div className="pin-location col-12">
-            Your PIN is in the blue box on the bottom right of your mailer. See
-            example
+            Find your PIN number. See example
             <span onClick={handleShow}> here.</span>
           </div>
           <div

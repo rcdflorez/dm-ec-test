@@ -5,7 +5,7 @@ import { StaticImage } from "gatsby-plugin-image"
 export default function Footer() {
   return (
     <>
-      <section className="footer-section mt-5">
+      <section className="footer-section mt-0">
         <div className="container-fluid footer d-block">
           <div className="container-fluid footer-shadow">
             <footer className="pb-0">

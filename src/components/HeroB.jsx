@@ -139,7 +139,7 @@ export default function HeroB(props) {
 
               <div className="col-12 text-center btn-container">
                 <a onClick={verifyPin} className="btn primary px-5 py-3">
-                  Let's get Started
+                  Let's Get Started
                 </a>
               </div>
               {custStatus != "customer" ? (

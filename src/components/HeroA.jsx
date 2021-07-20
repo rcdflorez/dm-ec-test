@@ -136,7 +136,7 @@ export default function HeroA(props) {
           <div className="my-auto pb-sm-1 mt-sm-5 btn-container">
             <div className="col-12 col-sm-12 p-0 text-center mt-sm-2">
               <a onClick={verifyPin} className="btn primary px-5 py-3">
-                Let's get Started
+                Let's Get Started
               </a>
             </div>
 
@@ -156,7 +156,7 @@ export default function HeroA(props) {
       </div>
       <div className="container-lg body-container">
         <div className="row bg-white">
-          <div className="col-12 col-sm-6 text-left m-auto">
+          <div className="col-12 col-sm-6 text-left ml-auto">
             <p className="h2 wwa-header pb-3">Who We Are</p>
             <p className="h5 wwa-body">
               Explore Credit builds relationships through financial trust. We’re
@@ -173,7 +173,7 @@ export default function HeroA(props) {
                   width={20}
                   height={20}
                 />
-                <span>Unmatched Customer Service</span>
+                <span> Unmatched Customer Service</span>
               </li>
               <li>
                 <StaticImage
@@ -182,7 +182,7 @@ export default function HeroA(props) {
                   width={20}
                   height={20}
                 />
-                <span>Simple Interest Rates</span>
+                <span> Simple Interest Rates</span>
               </li>
               <li>
                 <StaticImage
@@ -191,11 +191,11 @@ export default function HeroA(props) {
                   width={20}
                   height={20}
                 />
-                <span>No Hidden Fees</span>
+                <span> No Hidden Fees</span>
               </li>
             </ul>
           </div>
-          <div className="col-12 col-sm-3 text-center mx-auto">
+          <div className="col-12 col-sm-3 text-center mr-auto">
             <div className="d-none d-sm-block justify-content-center col-4 planets-container">
               <div className="col-12 planet1-container">
                 <div className="planetBlue"></div>

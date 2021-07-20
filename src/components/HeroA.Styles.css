@@ -39,7 +39,7 @@
         background-position: center;
     }
     .body-container {
-        padding-top: 7rem;
+        padding-top: 2rem;
     }
 }
 
@@ -166,17 +166,18 @@ h1.h1-amount {
     }
 }
 
-@media only screen and (max-device-width: 800px) and (orientation: portrait) {
-    .hero-container div.body-container {
-        padding-top: 130px;
-    }
+@media only screen and (max-device-width: 800px) {
     .hero-container div.no-pin {
         color: #212529;
-        ;
     }
     .hero-container div.no-pin a {
         color: var(--dark-links-color);
-        ;
+    }
+}
+
+@media only screen and (max-device-width: 800px) and (orientation: portrait) {
+    .hero-container div.body-container {
+        padding-top: 130px;
     }
 }
 
@@ -186,7 +187,7 @@ h1.h1-amount {
     }
 }
 
-@media only screen and (max-device-width: 800px) and (orientation: landscape) {
+@media only screen and (max-device-width: 900px) and (orientation: landscape) {
     div.hero-container div.bottom-hero {
         min-height: 250vh !important;
     }
