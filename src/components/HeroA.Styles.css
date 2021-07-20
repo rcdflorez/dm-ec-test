@@ -199,3 +199,14 @@ h1.h1-amount {
         padding-top: 150px;
     }
 }
+
+
+/*
+ul {
+    list-style-image: url('../images/bullet_star.png');
+    list-style-position: inherit;
+}
+
+ul li::marker {
+    background-color: red;
+} */

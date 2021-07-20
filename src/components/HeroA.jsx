@@ -176,7 +176,7 @@ export default function HeroA(props) {
             <div className="row d-flex justify-content-center">
               <div className="">
                 <ul className="p-0 mx-auto mt-3 list-b text-left">
-                  <li>Unmatched Customer Service</li>
+                  <li> Unmatched Customer Service</li>
                   <li>Simple Interest Rates </li>
                   <li>No Hidden Fees</li>
                 </ul>

@@ -183,9 +183,28 @@ export default function HeroB(props) {
             <div className="row d-flex justify-content-center">
               <div className="">
                 <ul className="p-0 mx-auto mt-3 list-b text-left">
-                  <li>Unmatched Customer Service</li>
-                  <li>Simple Interest Rates </li>
-                  <li>No Hidden Fees</li>
+                  <li>
+                    <StaticImage
+                      src="../images/bullet_star.png"
+                      loading="eager"
+                    />
+                    <span className=" "> Unmatched Customer Service</span>
+                  </li>
+                  <li>
+                    <StaticImage
+                      src="../images/bullet_star.png"
+                      loading="eager"
+                    />
+                    <span> Simple Interest Rates </span>
+                  </li>
+                  <li>
+                    <StaticImage
+                      src="../images/bullet_star.png"
+                      loading="eager"
+                    />
+
+                    <span> No Hidden Fees</span>
+                  </li>
                 </ul>
               </div>
             </div>
