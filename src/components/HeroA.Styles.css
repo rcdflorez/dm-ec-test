@@ -181,7 +181,7 @@ h1.h1-amount {
     }
 }
 
-@media only screen and (min-device-width: 800px) and (orientation: landscape) {
+@media only screen and (min-device-width: 800px) and(max-device-width: 2000px) and (orientation: landscape) {
     div.hero-container div.bottom-hero {
         min-height: 100vh !important;
     }
