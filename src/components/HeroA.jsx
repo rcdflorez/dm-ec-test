@@ -89,8 +89,6 @@ export default function HeroA(props) {
       if (txtbox && e.key == "Enter") {
         verifyPin()
       }
-
-      e.preventDefault()
     }
   } catch (error) {
     console.log(error)
