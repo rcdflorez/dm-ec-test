@@ -93,6 +93,18 @@ export default function HeroB(props) {
     }
     return
   }
+  var txtbox = document.getElementById("pinID")
+  try {
+    txtbox.onkeydown = function (e) {
+      if (txtbox && e.key == "Enter") {
+        verifyPin()
+      }
+
+      e.preventDefault()
+    }
+  } catch (error) {
+    console.log(error)
+  }
 
   return (
     <>

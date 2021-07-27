@@ -23,37 +23,36 @@ export default function PinBox(props) {
       <h3 className="pb-2 font-weight-light">
         Enter your PIN below to activate your offer.
       </h3>
-      <form>
-        <div className="form-group row mb-0 row px-1 mx-0 d-flex justify-content-center">
-          <div className="pin-input-container">
-            <div className="d-flex flex-row align-items-center justify-content-center bd-highlight mb-3">
-              <div className="p-2 bd-highlight">
-                <h3 className="">PIN #:</h3>
-              </div>
-              <div className="p-2 bd-highlight">
-                {" "}
-                <input
-                  type="text"
-                  className="form-control text-center "
-                  id="pinID"
-                  onChange={event => validatePinId(event.target.value)}
-                  value={pinValue}
-                />
-              </div>
+
+      <div className="form-group row mb-0 row px-1 mx-0 d-flex justify-content-center">
+        <div className="pin-input-container">
+          <div className="d-flex flex-row align-items-center justify-content-center bd-highlight mb-3">
+            <div className="p-2 bd-highlight">
+              <h3 className="">PIN #:</h3>
+            </div>
+            <div className="p-2 bd-highlight">
+              {" "}
+              <input
+                type="text"
+                className="form-control text-center "
+                id="pinID"
+                onChange={event => validatePinId(event.target.value)}
+                value={pinValue}
+              />
             </div>
           </div>
-          <div className="pin-location col-12">
-            Find your PIN number. See example
-            <span onClick={handleShow}> here.</span>
-          </div>
-          <div
-            id="errorMsjDiv"
-            className="col-12 error-msj text-center mt-2 mb-1 invisible"
-          >
-            Invalid PIN, please verify and try it again.
-          </div>
         </div>
-      </form>
+        <div className="pin-location col-12">
+          Find your PIN number. See example
+          <span onClick={handleShow}> here.</span>
+        </div>
+        <div
+          id="errorMsjDiv"
+          className="col-12 error-msj text-center mt-2 mb-1 invisible"
+        >
+          Invalid PIN, please verify and try it again.
+        </div>
+      </div>
 
       <Modal show={show} onHide={handleClose}>
         <Modal.Body>
