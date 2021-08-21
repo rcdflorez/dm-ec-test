@@ -15,7 +15,7 @@ export default function CountDown() {
         countdownNumberEl.textContent = countdown
       }
       if (countdown <= 9) {
-        window.location.href = "http://dev-application.pavecredit.com/"
+        window.location.href = "http://application.explorecredit.com/"
       }
     }, 1000)
   }, [])
