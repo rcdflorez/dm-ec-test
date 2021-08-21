@@ -14,7 +14,7 @@ export default function CountDown() {
       } else {
         countdownNumberEl.textContent = countdown
       }
-      if (countdown <= 9) {
+      if (countdown <= 2) {
         window.location.href = "http://application.explorecredit.com/"
       }
     }, 1000)
