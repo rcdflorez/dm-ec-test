@@ -96,7 +96,7 @@ export default function HeroA(props) {
 
   return (
     <>
-      <div className="container-fluid hero-container-c p-0">
+      <div className="container-fluid hero-container-c p-0 px-3">
         <div className="text-left pt-2 d-sm-none">
           <StaticImage
             src="../images/ex-icon.png"
@@ -121,20 +121,25 @@ export default function HeroA(props) {
         <div className="d-flex flex-column p-0 bottom-hero-c pt-0 ">
           <div className="px-2 text-center w-100 pt-0 pt-lg-5">
             <div className="header">
-              <h2>Hello {name2}</h2>
+              <h1>Hello {name2}</h1>
               <h1>Welcome to Explore Credit!</h1>
             </div>
-            <h3 className="font-weight-light">Unfortunately, your pre-approved loan offer has expired.</h3>
+            <h4 className="font-weight-light pt-4 ">
+              Unfortunately, your pre-approved loan offer has expired.
+            </h4>
 
-            <h4 className="font-weight-light pt-4 pt-lg-0">But, don’t worry… We might still be able to get you the cash you need.</h4>
-            
-              <div className="body">
-                <CountDown/>
-                <h5 className="font-weight-lighter mb-lg-5"> You’ll be redirected to our application in 10 seconds.</h5>
-              </div>
+            <h4 className="font-weight-light pt-lg-0">
+              But, don’t worry… We might still be able to get you the cash you
+              need.
+            </h4>
 
-             
-           
+            <div className="body">
+              <CountDown />
+              <h5 className="font-weight-lighter mb-lg-5">
+                {" "}
+                You’ll be redirected to our application in 10 seconds.
+              </h5>
+            </div>
           </div>
           <div className="my-auto pb-sm-1 mt-sm-0 btn-container">
             <div className="col-12 col-sm-12 p-0 text-center mt-sm-2">
@@ -142,8 +147,6 @@ export default function HeroA(props) {
                 Apply Now
               </a>
             </div>
-
-
           </div>
         </div>
       </div>

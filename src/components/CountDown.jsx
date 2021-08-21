@@ -14,8 +14,9 @@ export default function CountDown() {
       } else {
         countdownNumberEl.textContent = countdown
       }
-      if (countdown <= 2) {
-        window.location.href = "http://application.explorecredit.com/"
+      if (countdown <= 1) {
+        window.location.href =
+          "http://application.explorecredit.com/?utm_medium=directmail&utm_source=lsdm&utm_campaign=prescreen072021&utm_content=pagec"
       }
     }, 1000)
   }, [])
