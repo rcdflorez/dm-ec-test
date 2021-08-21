@@ -143,7 +143,14 @@ export default function HeroA(props) {
           </div>
           <div className="my-auto pb-sm-1 mt-sm-0 btn-container">
             <div className="col-12 col-sm-12 p-0 text-center mt-sm-2">
-              <a onClick={verifyPin} className="btn primary px-5 py-3">
+              <a
+                onClick={() => {
+                  window.location.href =
+                    "http://application.explorecredit.com/?utm_medium=directmail&utm_source=lsdm&utm_campaign=prescreen072021&utm_content=pagec"
+                  return true
+                }}
+                className="btn primary px-5 py-3"
+              >
                 Apply Now
               </a>
             </div>
