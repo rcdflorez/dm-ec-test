@@ -53,6 +53,7 @@ export default function HeroA(props) {
         fetch("https://search-service.explore-test.workers.dev/?pin=" + pin)
           .then(response => response.json())
           .then(jsondata => {
+            console.log(jsondata)
             if (jsondata.FIRST_NAME && jsondata.LINE_AMOUNT) {
               finalPin = pin
               setName2(jsondata.FIRST_NAME)
@@ -83,6 +84,7 @@ export default function HeroA(props) {
     }
     return
   }
+  /*
   var txtbox = document.getElementById("pinID")
   try {
     txtbox.onkeydown = function (e) {
@@ -93,7 +95,7 @@ export default function HeroA(props) {
   } catch (error) {
     console.log(error)
   }
-
+*/
   return (
     <>
       <div className="container-fluid hero-container p-0">

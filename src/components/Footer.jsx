@@ -135,7 +135,7 @@ export default function Footer() {
                   <div className="text-center p-4 contact-info-container d-block d-sm-flex justify-content-sm-around  m-auto">
                     <p className="border-2 mb-3 m-sm-0 align-middle col-sm-5">
                       {" "}
-                      <a href="tel:844-355-5626">844-355-5626 / 844-355-LOAN</a>
+                      <a href="tel:855-915-6245">855-915-6245</a>
                     </p>
                     <p className="d-block d-sm-none align-middle">
                       Explore Credit Operational Dept. ,{" "}
@@ -152,17 +152,17 @@ export default function Footer() {
 
                 <div className="row text-center legal-container p-4 w-100 m-auto">
                   <small>
-                    All installment loans are underwritten by WLCC Lending JEM
+                    "All installment loans are underwritten by WLCC Lending JEM
                     doing business as Explore Credit. Explore Credit is a Native
                     American owned business operating within the interior
                     boundaries of the Pine Ridge Reservation of the Oglala Sioux
-                    Tribe, a sovereign nation located in the United States.{" "}
+                    Tribe, a sovereign nation located in the United States.
                     <br />
                     <br />
                     WLCC Lending JEM is an entity of the Wakpamni Lake Community
                     Corporation (WLCC), a tribal corporation wholly owned by the
                     Wakpamni Lake Community. The Wakpamni Lake Community is a
-                    local municipal subsidiarygovernment under the Oglala Sioux
+                    local municipal subsidiary government under the Oglala Sioux
                     Tribe. WLCC is incorporated under and governed by the laws
                     of the Oglala Sioux Tribe, a federally recognized Indian
                     Tribe, and the regulations of the Wakpamni Lake Community.
@@ -184,18 +184,39 @@ export default function Footer() {
                     eligibility and ability to repay.
                     <br />
                     <br />
-                    Explore Credit does not lend to residents of AL, AK, AR, CT,
-                    GA, MA, MD, NC, NH, NJ, NY, PA, SD, VA, VT, WV Guam and
-                    Puerto Rico. Availability of installment loans are subject
-                    to change at any time at the sole discretion of Explore
-                    Credit.
+                    Explore Credit does not lend to residents of NY, PA, GA, NC,
+                    NJ, VA, MA, MD, AL, CT, AR, WV, NH, SD, AK, VT, Guam, Puerto
+                    Rico, and the US Virgin Islands. Availability of installment
+                    loans are subject to change at any time at the sole
+                    discretion of Explore Credit.
                     <br />
                     <br />
-                    Please Note: Installment loans should be used for short-term
-                    financial needs only, not as a long-term financial solution.
-                    Customers with credit difficulties should seek credit
-                    counseling. Explore Credit will only allow a customer to
-                    have one loan at a time.
+                    IMPORTANT INFORMATION ABOUT PROCEDURES FOR APPLYING FOR A
+                    LOAN – To help fight the funding of terrorism and money
+                    laundering activities, and to comply with Tribal law and the
+                    spirit of federal law requiring all financial institutions
+                    to obtain, verify and record information that identifies
+                    each person who applies for a loan, we will ask for your
+                    name, address, date of birth, and other information that
+                    will allow us to identify you. We may also ask for your
+                    driver’s license number or other identifying documents.
+                    <br />
+                    <br />
+                    Certain events or changes to your information may impact
+                    your eligibility to receive a loan. If you no longer meet
+                    the evaluation criteria, we may offer you a loan in a
+                    different amount or on different terms. If you reside in a
+                    state in which we do not provide services, you will be
+                    ineligible for a loan.
+                    <br />
+                    <br />
+                    To obtain a loan, you must have a valid checking account,
+                    e-mail address, verifiable identity, and verifiable minimum
+                    income. Please Note: Installment loans should be used for
+                    short-term financial needs only, not as a long-term
+                    financial solution. Customers with credit difficulties
+                    should seek credit counseling. Explore Credit will only
+                    allow a customer to have one loan at a time. "
                   </small>
                 </div>
                 <div className="row copyright-container text-center p-3 d-flex justify-content-center w-100 m-auto">

@@ -93,6 +93,7 @@ export default function HeroB(props) {
     }
     return
   }
+  /*
   var txtbox = document.getElementById("pinID")
   try {
     txtbox.onkeydown = function (e) {
@@ -102,7 +103,7 @@ export default function HeroB(props) {
     }
   } catch (error) {
     console.log(error)
-  }
+  } */
 
   return (
     <>
