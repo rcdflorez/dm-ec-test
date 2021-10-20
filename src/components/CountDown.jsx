@@ -16,7 +16,7 @@ export default function CountDown() {
       }
       if (countdown <= 1) {
         window.location.href =
-          "http://application.explorecredit.com/?utm_medium=directmail&utm_source=lsdm&utm_campaign=prescreen072021&utm_content=pagec"
+          "http://application.explorecredit.com/?utm_medium=directmail&utm_source=lsdm&utm_campaign=prescreen112021&utm_content=pagec"
       }
     }, 1000)
   }, [])

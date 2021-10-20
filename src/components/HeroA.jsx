@@ -15,7 +15,7 @@ export default function HeroA(props) {
   const baseRedirectURI = "https://application.explorecredit.com/"
 
   const UTM_BASE =
-    "utm_medium=directmail&utm_source=lsdm&utm_campaign=prescreen072021&utm_content=pagea"
+    "utm_medium=directmail&utm_source=lsdm&utm_campaign=prescreen112021&utm_content=pagea"
 
   let UTM_PIN = ""
 
@@ -84,7 +84,7 @@ export default function HeroA(props) {
     }
     return
   }
-  /*
+
   var txtbox = document.getElementById("pinID")
   try {
     txtbox.onkeydown = function (e) {
@@ -95,7 +95,7 @@ export default function HeroA(props) {
   } catch (error) {
     console.log(error)
   }
-*/
+
   return (
     <>
       <div className="container-fluid hero-container p-0">
@@ -175,6 +175,7 @@ export default function HeroA(props) {
                   loading="eager"
                   width={20}
                   height={20}
+                  alt=""
                 />
                 <span> Unmatched Customer Service</span>
               </li>
@@ -184,6 +185,7 @@ export default function HeroA(props) {
                   loading="eager"
                   width={20}
                   height={20}
+                  alt=""
                 />
                 <span> Simple Interest Rates</span>
               </li>
@@ -193,6 +195,7 @@ export default function HeroA(props) {
                   loading="eager"
                   width={20}
                   height={20}
+                  alt=""
                 />
                 <span> No Hidden Fees</span>
               </li>

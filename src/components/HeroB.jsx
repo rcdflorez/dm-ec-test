@@ -19,7 +19,7 @@ export default function HeroB(props) {
   const baseRedirectURI = "https://application.explorecredit.com/"
 
   const UTM_BASE =
-    "utm_medium=directmail&utm_source=lsdm&utm_campaign=prescreen072021&utm_content=pageb"
+    "utm_medium=directmail&utm_source=lsdm&utm_campaign=prescreen112021&utm_content=pageb"
 
   let UTM_PIN = ""
 
@@ -93,7 +93,7 @@ export default function HeroB(props) {
     }
     return
   }
-  /*
+
   var txtbox = document.getElementById("pinID")
   try {
     txtbox.onkeydown = function (e) {
@@ -103,7 +103,7 @@ export default function HeroB(props) {
     }
   } catch (error) {
     console.log(error)
-  } */
+  }
 
   return (
     <>
@@ -200,6 +200,7 @@ export default function HeroB(props) {
                       loading="eager"
                       width={20}
                       height={20}
+                      alt=""
                     />
                     <span className=" "> Unmatched Customer Service</span>
                   </li>
@@ -209,6 +210,7 @@ export default function HeroB(props) {
                       loading="eager"
                       width={20}
                       height={20}
+                      alt=""
                     />
                     <span> Simple Interest Rates </span>
                   </li>
@@ -218,6 +220,7 @@ export default function HeroB(props) {
                       loading="eager"
                       width={20}
                       height={20}
+                      alt=""
                     />
 
                     <span> No Hidden Fees</span>
