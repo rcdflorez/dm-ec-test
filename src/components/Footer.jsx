@@ -108,17 +108,26 @@ export default function Footer() {
                 <div className="row w-100 m-auto mobile-border-bottom">
                   <div className="legal-links-container  text-center p-3 d-block d-sm-flex justify-content-sm-around  m-auto">
                     <p className="col-sm-4 my-sm-auto">
-                      <a href="https://explorecredit.com/privacy-policy">
+                      <a
+                        href="https://explorecredit.com/privacy-policy"
+                        target="_blank"
+                      >
                         Privacy Policy
                       </a>
                     </p>
                     <p className="border-1 col-sm-4 my-sm-auto">
-                      <a href="https://explorecredit.com/termsandconditions">
+                      <a
+                        href="https://explorecredit.com/termsandconditions"
+                        target="_blank"
+                      >
                         Terms & Conditions
                       </a>
                     </p>
                     <p className="col-sm-4 my-sm-auto mb-0">
-                      <a href="https://explorecredit.com/about-us/">
+                      <a
+                        href="https://explorecredit.com/wp-content/uploads/2021/05/WLCC-Lending-JEM_Consumer-Loan-License-1.pdf"
+                        target="_blank"
+                      >
                         Licenses, Affiliations & Regulatory{" "}
                       </a>
                     </p>
@@ -146,7 +155,7 @@ export default function Footer() {
 
                 <div className="row text-center legal-container p-4 w-100 m-auto">
                   <small>
-                    "All installment loans are underwritten by WLCC Lending JEM
+                    All installment loans are underwritten by WLCC Lending JEM
                     doing business as Explore Credit. Explore Credit is a Native
                     American owned business operating within the interior
                     boundaries of the Pine Ridge Reservation of the Oglala Sioux
@@ -210,7 +219,57 @@ export default function Footer() {
                     short-term financial needs only, not as a long-term
                     financial solution. Customers with credit difficulties
                     should seek credit counseling. Explore Credit will only
-                    allow a customer to have one loan at a time. "
+                    allow a customer to have one loan at a time.
+                    <br />
+                    <br />
+                    1 You were selected for this offer based on information in
+                    your credit report from a credit reporting agency showing
+                    you satisfied the lender’s pre-established criteria for
+                    creditworthiness in conjunction with this offer. This offer
+                    is not guaranteed. You may not receive a loan for the full
+                    amount (or at all) if, after you respond to this offer, we
+                    find that you no longer meet the criteria used to pre-select
+                    you for this offer, including, but not limited to, changes
+                    in your monthly income and your ability to repay. Minimum
+                    offer $250.
+                    <br />
+                    <br />2 Consumers whose eligibility for this offer is
+                    verified by 7 PM Eastern Time on a business day will
+                    typically receive ACH deposits to their bank account the
+                    next business day. However, delays can occur. Please contact
+                    your bank institution for more information on individual
+                    funding times. Business Days are Monday through Friday 8 AM
+                    to 8 PM Eastern Time, and Saturday 8 AM to 5 PM Eastern
+                    Time.
+                    <br />
+                    <br />
+                    This offer is a “firm offer of credit” for purposes of the
+                    Fair Credit Reporting Act. This offer is only for the
+                    individual named in the offer and may not be transferred to
+                    any other party. To receive the loan you must meet the
+                    following eligibility criteria: be 18 years of age or older
+                    and have a valid checking account in good standing, valid
+                    email address, a verifiable identity and not currently have
+                    an existing Explore Credit loan. Eligibility criteria are
+                    different from the credit criteria used for this offer.
+                    Minimum monthly income and ability to repay verification is
+                    required.
+                    <br />
+                    <br />
+                    This offer is not guaranteed if you do not continue to meet
+                    or cannot verify you continue to meet the criteria used to
+                    select you for this offer. The loan agreement you must sign
+                    in order to accept this offer, may limit your legal rights,
+                    including your right to go to court, to have a jury trial
+                    and to participate in class actions.
+                    <br />
+                    <br />
+                    WLCC Lending JEM is a sovereign enterprise, an economic
+                    development arm and instrumentality of, and wholly owned and
+                    controlled by, the Wakpamni Lake Community (the
+                    “Community”), a political subdivision of the Oglala Sioux
+                    Tribe (the “Tribe”), a federally-recognized sovereign
+                    American Indian Tribe.
                   </small>
                 </div>
                 <div className="logos-container row d-flex justify-content-center d-block d-sm-flex justify-content-sm-around w-8 pb-3">
