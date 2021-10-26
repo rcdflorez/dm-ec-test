@@ -14,7 +14,8 @@ export default function Footer() {
                   <StaticImage
                     src="../images/explore_credit_white_RGB1.png"
                     alt=""
-                    height={50}
+                    height={80}
+                    className="mt-5"
                   />
                 </div>
 
