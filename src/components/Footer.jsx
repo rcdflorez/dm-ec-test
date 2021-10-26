@@ -13,8 +13,8 @@ export default function Footer() {
                 <div className="col-12 d-flex justify-content-center p-4 logo-container d-block d-sm-none ">
                   <StaticImage
                     src="../images/explore_credit_white_RGB1.png"
-                    alt="A kitten"
-                    className="py-3 my-3"
+                    alt=""
+                    height={50}
                   />
                 </div>
 
@@ -22,7 +22,7 @@ export default function Footer() {
                   <div className="my-auto col-12 d-none d-sm-block align-middle text-center py-3 pb-4">
                     <StaticImage
                       src="../images/explore_credit_white_RGB1.png"
-                      alt="A kitten"
+                      alt=""
                     />
                   </div>
 
@@ -87,7 +87,7 @@ export default function Footer() {
                     </div>
                   </div>
                 </div>
-                <div className="bnt-cotainer d-block d-sm-none d-none">
+                <div className="bnt-cotainer d-sm-none d-none">
                   <div className="col-12 p-2">
                     <button
                       type="button"
