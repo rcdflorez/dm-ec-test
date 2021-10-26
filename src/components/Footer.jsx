@@ -10,22 +10,23 @@ export default function Footer() {
           <div className="container-fluid footer-shadow">
             <footer className="pb-0">
               <div className="footer-container m-auto">
-                <div className="col-12 d-flex justify-content-center p-4 logo-container d-block d-sm-none my-5">
+                <div className="col-12 d-flex justify-content-center p-4 logo-container d-block d-sm-none ">
                   <StaticImage
                     src="../images/explore_credit_white_RGB1.png"
                     alt="A kitten"
+                    className="py-3 my-3"
                   />
                 </div>
 
-                <div className="row p-1 links-container w-100 m-auto">
-                  <div className="my-auto col-3 d-none d-sm-block align-middle">
+                <div className="row p-1 links-container w-100 m-auto ">
+                  <div className="my-auto col-12 d-none d-sm-block align-middle text-center py-3 pb-4">
                     <StaticImage
                       src="../images/explore_credit_white_RGB1.png"
                       alt="A kitten"
                     />
                   </div>
 
-                  <div className="my-auto col-6 col-sm-3 mx-0 px-0 align-middle">
+                  <div className="my-auto col-6 col-sm-3 mx-0 px-0 align-middle d-none">
                     <ul className="">
                       <li>
                         <a href="https://explorecredit.com/how-it-works/">
@@ -44,7 +45,7 @@ export default function Footer() {
                       </li>
                     </ul>
                   </div>
-                  <div className="my-auto col-6 col-sm-3 mx-0 px-0">
+                  <div className="my-auto col-6 col-sm-3 mx-0 px-0 d-none">
                     <ul>
                       <li>
                         <a href="https://explorecredit.com/about-us/">
@@ -65,7 +66,7 @@ export default function Footer() {
                     </ul>
                   </div>
 
-                  <div className="my-auto col-3">
+                  <div className="my-auto col-3 d-none">
                     <div className="bnt-cotainer d-none d-sm-block">
                       <div className="col-12 py-2 ">
                         <button
@@ -86,7 +87,7 @@ export default function Footer() {
                     </div>
                   </div>
                 </div>
-                <div className="bnt-cotainer d-block d-sm-none">
+                <div className="bnt-cotainer d-block d-sm-none d-none">
                   <div className="col-12 p-2">
                     <button
                       type="button"
@@ -122,13 +123,6 @@ export default function Footer() {
                       </a>
                     </p>
                   </div>
-                </div>
-
-                <div className="logos-container row d-flex justify-content-center d-block d-sm-flex justify-content-sm-around w-8">
-                  <StaticImage
-                    src="../images/logo_verisign_black.png"
-                    alt="A kitten"
-                  />
                 </div>
 
                 <div className="row w-100 m-auto mobile-border-bottom">
@@ -218,6 +212,12 @@ export default function Footer() {
                     should seek credit counseling. Explore Credit will only
                     allow a customer to have one loan at a time. "
                   </small>
+                </div>
+                <div className="logos-container row d-flex justify-content-center d-block d-sm-flex justify-content-sm-around w-8 pb-3">
+                  <StaticImage
+                    src="../images/logo_verisign_black.png"
+                    alt="A kitten"
+                  />
                 </div>
                 <div className="row copyright-container text-center p-3 d-flex justify-content-center w-100 m-auto">
                   <small>

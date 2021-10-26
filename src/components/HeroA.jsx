@@ -200,6 +200,13 @@ export default function HeroA(props) {
                 <span> No Hidden Fees</span>
               </li>
             </ul>
+            <p className="h5 wwa-body">
+              If you want to know more about Explore Credit,{" "}
+              <a href="https://explorecredit.com/" style={{ color: "#2EC5EA" }}>
+                {" "}
+                click here.
+              </a>
+            </p>
           </div>
           <div className="col-12 col-sm-3 text-center mr-auto">
             <div className="d-none d-sm-block justify-content-center col-4 planets-container">

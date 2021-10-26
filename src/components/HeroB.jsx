@@ -183,7 +183,7 @@ export default function HeroB(props) {
         <div className="row">
           <div className="col-12 col-sm-9 text-center m-auto">
             <p className="h2 wwa-header pb-3">Who We Are</p>
-            <p className="h5 wwa-body">
+            <p className="h5 wwa-body text-left">
               Explore Credit builds relationships through financial trust. We’re
               a smart, simple, and fast way to borrow money when you need it the
               most. We offer short-term installment loans with no hidden fees.
@@ -228,6 +228,13 @@ export default function HeroB(props) {
                 </ul>
               </div>
             </div>
+            <p className="h5 wwa-body text-left pt-2">
+              If you want to know more about Explore Credit,{" "}
+              <a href="https://explorecredit.com/" style={{ color: "#2EC5EA" }}>
+                {" "}
+                click here.
+              </a>
+            </p>
           </div>
         </div>
       </div>
