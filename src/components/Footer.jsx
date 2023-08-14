@@ -139,7 +139,7 @@ export default function Footer() {
                   <div className="text-center p-4 contact-info-container d-block d-sm-flex justify-content-sm-around  m-auto">
                     <p className="border-2 mb-3 m-sm-0 align-middle col-sm-5">
                       {" "}
-                      <a href="tel:855-915-6245">855-915-6245</a>
+                      <a href="tel:800-341-6101">800-341-6101</a>
                     </p>
                     <p className="d-block d-sm-none align-middle">
                       Explore Credit Operational Dept. ,{" "}
@@ -188,11 +188,11 @@ export default function Footer() {
                     eligibility and ability to repay.
                     <br />
                     <br />
-                    Explore Credit does not lend to residents of NY, PA, GA, NC,
-                    NJ, VA, MA, MD, AL, CT, AR, WV, NH, SD, AK, VT, Guam, Puerto
-                    Rico, and the US Virgin Islands. Availability of installment
-                    loans are subject to change at any time at the sole
-                    discretion of Explore Credit.
+                    Explore Credit does not lend to residents of IL, NY, PA, GA,
+                    NC, NJ, VA, MA, MD, AL, CT, AR, WV, NH, SD, AK, VT, Guam,
+                    Puerto Rico, and the US Virgin Islands. Availability of
+                    installment loans are subject to change at any time at the
+                    sole discretion of Explore Credit.
                     <br />
                     <br />
                     IMPORTANT INFORMATION ABOUT PROCEDURES FOR APPLYING FOR A
@@ -281,7 +281,7 @@ export default function Footer() {
                 </div>
                 <div className="row copyright-container text-center p-3 d-flex justify-content-center w-100 m-auto">
                   <small>
-                    &copy; Copyright 2021. Explore Credit All Rights Reserved
+                    &copy; Copyright 2023. Explore Credit All Rights Reserved
                   </small>
                 </div>
               </div>
