@@ -127,8 +127,8 @@ export default function HeroA(props) {
             </div>
             {custStatus === "customer" ? (
               <div className="body">
-                <h5>You have been approved for a loan in the amount of:</h5>
-                <h1 className="mt-3 h1-amount">${amount2}.00</h1>
+                <h5>You have been pre-approved for a loan in the amount of:</h5>
+                <h1 className="mt-3 h1-amount">${amount2}</h1>
               </div>
             ) : (
               <div className="body">
@@ -147,7 +147,7 @@ export default function HeroA(props) {
               <div id="noPinDiv" className="col-12 text-center no-pin py-2">
                 If you dont have a pin,{" "}
                 <a href={baseRedirectURI + "?" + UTM_BASE + "&utm_term=noqr"}>
-                  click here,
+                  click here
                 </a>{" "}
                 to continue.
               </div>

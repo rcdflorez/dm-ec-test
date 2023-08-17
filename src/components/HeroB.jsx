@@ -138,9 +138,10 @@ export default function HeroB(props) {
               {custStatus === "customer" ? (
                 <div className="col-12 text-center body">
                   <h3>
-                    You have been approved <br /> for a loan in the amount of:
+                    You have been pre-approved <br /> for a loan in the amount
+                    of:
                   </h3>
-                  <h1 className="mt-3">${amount2}.00</h1>
+                  <h1 className="mt-3">${amount2}</h1>
                 </div>
               ) : (
                 <div className="col-12 text-center body">
@@ -157,7 +158,7 @@ export default function HeroB(props) {
                 <div id="noPinDiv" className="col-12 text-center no-pin py-2">
                   If you dont have a pin,{" "}
                   <a href={baseRedirectURI + "?" + UTM_BASE + "&utm_term=noqr"}>
-                    click here,
+                    click here
                   </a>{" "}
                   to continue.
                 </div>
