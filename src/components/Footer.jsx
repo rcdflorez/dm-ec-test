@@ -139,7 +139,7 @@ export default function Footer() {
                   <div className="text-center p-4 contact-info-container d-block d-sm-flex justify-content-sm-around  m-auto">
                     <p className="border-2 mb-3 m-sm-0 align-middle col-sm-5">
                       {" "}
-                      <a href="tel:844-773-3321">844-773-3321</a>
+                      <a href="tel:(800)-341-6101">(800)-341-6101</a>
                     </p>
                     <p className="d-block d-sm-none align-middle">
                       Explore Credit Operational Dept. ,{" "}

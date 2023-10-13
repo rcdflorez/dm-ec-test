@@ -19,7 +19,7 @@ export default function HeroB(props) {
   const baseRedirectURI = "https://application.explorecredit.com/"
 
   const UTM_BASE =
-    "utm_medium=directmail&utm_source=lsdm&utm_campaign=prescreen112021&utm_content=pageb&campaign=dm&test"
+    "utm_medium=directmail&utm_source=lsdm&utm_campaign=DM_Fall2023&utm_content=pageb&campaign=dm"
 
   let UTM_PIN = ""
 
